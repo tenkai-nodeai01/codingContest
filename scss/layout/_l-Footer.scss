@@ -1,0 +1,8 @@
+.l-footer-wrapper {
+    display: block;
+    @media only screen and (min-width: 940px) { 
+        & {
+            display: none;
+        }
+    }
+}

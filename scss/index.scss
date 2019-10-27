@@ -1,7 +1,11 @@
 @charset "utf-8";
 
 @import "./foundation/_f-Normalize";
-@import "./foundation/_font";
+@import "./foundation/_f-font";
 @import "./foundation/_f-Color";
 @import "./layout/_l-Main";
-@import "./layout/l-Header";
+@import "./layout/_l-Header";
+@import "./layout/_l-Footer";
+
+// component
+@import "./object/component/_c-nav__logo";

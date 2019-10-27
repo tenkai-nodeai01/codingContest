@@ -1,0 +1,11 @@
+.c-nav__logo {
+    display: inline-block;
+    height: 100%;
+    width: 35px;
+    background: url(../assets/img/logo_s.svg) no-repeat;
+    @media only screen and (min-width: 940px) { 
+        & {
+            width: 152px;
+        }
+    }
+}

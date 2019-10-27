@@ -17,8 +17,25 @@
     position: absolute;
     height: 100%;
     background-color: $default-gray;
-    & .l-content__wrapper {
-        display:-ms-grid;
-        display:grid;
+}
+
+.l-content__wrapper {
+    overflow: auto;
+    display:-ms-grid;
+    display:grid;
+    height: 94.5%;
+    grid-template-areas:
+    'main'
+    'right'
+    'footer';
+}
+
+@media only screen and (min-width: 940px) { 
+    .l-content__wrapper {
+        height: 87%;
+        grid-template-areas:
+        'main right';
+        grid-gap: 15px;
+        padding: 0 25px 0 25px;
     }
 }
