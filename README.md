@@ -1,2 +1,2 @@
-# Gulp SCSS project
+# Coding Contest Project
 このプロジェクトは、GulpでSCSSコンパイルするための簡易なテンプレートです。
