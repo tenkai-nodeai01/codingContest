@@ -1,8 +1,24 @@
-.l-content-wrapper {
+// gridの設定
+.block-1 {
+    grid-area: main;
+}
+
+.block-2 {
+    grid-area: right;
+}
+
+.block-3 {
+    grid-area: footer;
+}
+
+// 全体の Layout
+.l-content {
     width: 100%;
     position: absolute;
     height: 100%;
     background-color: $default-gray;
-    display:-ms-grid;
-    display:grid;
+    & .l-content__wrapper {
+        display:-ms-grid;
+        display:grid;
+    }
 }
