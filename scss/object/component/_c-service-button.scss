@@ -1,0 +1,19 @@
+.footer-button-patoro,
+.header-button-patoro {
+    background-color: $white;
+    color: $patoro-brown;
+    &:hover {
+        background-color: $patoro-brown;
+        color: $white;
+    }
+}
+
+.footer-button-artist,
+.header-button-artist {
+    background-color: $patoro-brown;
+    color: $white;
+    &:hover {
+        background-color: $hover-black;
+        color: $white;
+    }
+}

@@ -1,0 +1,10 @@
+.c-header__login {
+    button {
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+        &:hover {
+            background-color: $hover-yellow;
+        }
+    }
+}

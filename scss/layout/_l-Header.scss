@@ -1,11 +1,35 @@
-.l-header {
-    width: 100%;
-    height: 44px;
+.header-content-1 {
+    grid-area: logo;
 }
 
-@media only screen and (min-width: 940px) { 
+.header-content-2 {
+    grid-area: nav;
+}
+
+.header-content-3 {
+    grid-area: service;
+}
+
+.header-content-4 {
+    grid-area: login;
+}
+
+
+.l-header {
+    font-size: 14px;
+    width: 100%;
+    height: 44px;
+    display:-ms-grid;
+    display:grid;
+    grid-template-areas:
+    'logo nav login';
+}
+
+@media only screen and (min-width: 940px) {
     .l-header {
         width: 100%;
         height: 105px;
+        grid-template-areas:
+        'logo nav service login';
     }
 }
