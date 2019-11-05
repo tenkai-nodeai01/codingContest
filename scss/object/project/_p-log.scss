@@ -9,6 +9,16 @@
         }
     }
 
+    #triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid black;
+        position: absolute;
+        right: 0;
+    }
+
 
     .c-log-logo {
         background: url(../assets/img/caret-down.svg) no-repeat;
