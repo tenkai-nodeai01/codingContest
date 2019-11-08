@@ -20,6 +20,7 @@
 }
 
 .l-content__wrapper {
+    padding: 45px 0 0 0;
     overflow: auto;
     display:-ms-grid;
     display:grid;
@@ -30,12 +31,12 @@
     'footer';
 }
 
-@media only screen and (min-width: 940px) { 
+@media only screen and (min-width: 940px) {
     .l-content__wrapper {
+        padding: 107px 0 0 0;
         height: 87%;
         grid-template-areas:
         'main right';
         grid-gap: 15px;
-        padding: 0 25px 0 25px;
     }
 }

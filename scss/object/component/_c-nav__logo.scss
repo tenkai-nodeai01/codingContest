@@ -1,5 +1,5 @@
 .c-nav__logo {
-    display: inline-block;
+    /*display: inline-block;
     height: 100%;
     width: 35px;
     background: url(../assets/img/logo_s.svg) no-repeat;
@@ -7,6 +7,22 @@
         & {
             width: 152px;
             background: url(../assets/img/logo_l.svg) no-repeat;
+        }
+    }*/
+    .c-logo__small {
+        display: block;
+        height: 100%;
+    }
+    .c-logo__large {
+        display: none;
+    }
+    @media only screen and (min-width: 940px) {
+        .c-logo__small {
+            display: none;
+        }
+        .c-logo__large {
+            display: block;
+            height: 100%;
         }
     }
 }
