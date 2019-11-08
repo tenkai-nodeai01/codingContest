@@ -1,7 +1,6 @@
 .l-footer-wrapper {
     display: block;
-    height: 100%;
-    padding: 5% 8% 5% 8%;
+    padding: 0 0 15px 0;
     @media only screen and (min-width: 940px) {
         & {
             display: none;
@@ -9,8 +8,12 @@
     }
 
     .c-footer {
+        text-align: center;
+        display: inline-block;
         width: 100%;
-        height: 100%;
+        .c-footer__title {
+            margin-bottom: 15px;
+        }
         .c-footer__logo {
             height: 80%;
             span {
