@@ -1,6 +1,6 @@
 .l-footer-wrapper {
     display: block;
-    padding: 0 0 15px 0;
+    background-color: $default-gray;
     @media only screen and (min-width: 940px) {
         & {
             display: none;
@@ -16,6 +16,8 @@
         }
         .c-footer__logo {
             height: 80%;
+            max-width: 190px;
+            margin: auto;
             span {
                 margin-left: 12%;
             }
