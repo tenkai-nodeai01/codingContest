@@ -1,14 +1,41 @@
 .c-header__service {
     display: none;
-
-    & button {
-        width: 100%;
-        height: 50%;
+    text-align: center;
+    // hover
+    .footer-button-patoro,
+    .header-button-patoro {
+        background-color: $white;
+        color: $patoro-brown;
+        &:hover {
+            background-color: $patoro-brown;
+            color: $white;
+        }
     }
 
+    .footer-button-artist,
+    .header-button-artist {
+        background-color: $patoro-brown;
+        color: $white;
+        &:hover {
+            background-color: $hover-black;
+            color: $white;
+        }
+    }
+
+    // basic setting for button sizes
     @media only screen and (min-width: 940px) {
         & {
             display: block;
+            width: 140px;
+            padding: 5px;
+            .menu-button {
+                width: 100%;
+                display: inline-block;
+                padding: 10px 0 10px 0;
+                &.header-button-patoro {
+                    margin-bottom: 5px;
+                }
+            }
         }
     }
 }

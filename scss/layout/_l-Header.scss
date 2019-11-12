@@ -1,8 +1,9 @@
 .l-header {
-    font-size: 14px;
     width: 100%;
     height: 44px;
     display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
     position: fixed;
     background-color: $default-gray;
     .l-header__wrapper {

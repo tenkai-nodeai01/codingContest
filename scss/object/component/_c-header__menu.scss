@@ -1,0 +1,21 @@
+.c-header__menu {
+    display: flex;
+    display: -webkit-flex;
+
+    .c-header__login {
+        padding: 0 15px;
+        line-height: 44px;
+        background-color: $white;
+        color: $hover-black;
+        &:hover {
+            background-color: $hover-yellow;
+            cursor: pointer;
+        }
+        @media only screen and (min-width: 940px) {
+            padding: 5px;
+            width: 150px;
+            text-align: center;
+            line-height: 90px;
+        }
+    }
+}
