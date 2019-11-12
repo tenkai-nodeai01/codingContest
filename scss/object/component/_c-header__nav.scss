@@ -1,26 +1,51 @@
 .c-header__nav {
-    ul {
-        list-style: none;
-        li {
-            display: inline;
-            cursor: pointer;
-            // set each icon
-            &.c-nav__map {
-                background: url(../assets/img/map_icon.svg) no-repeat;
+    width: 100%;
+    .nav-list {
+        display: inline;
+        cursor: pointer;
+        margin-right: 30px;
+        transition: all 100ms 0s ease;
+
+        a {
+            margin: 0 0 0 20px;
+            text-decoration: none;
+            transition: all 100ms 0s ease;
+            color: $hover-black;
+        }
+
+        // set each icon
+        &.c-nav__map {
+            background: url(../assets/img/map_icon.svg) no-repeat;
+            &:hover {
+                background: url(../assets/img/map_icon_white.svg) no-repeat;
+                a {
+                    color: $white;
+                }
             }
-            &.c-nav__search {
-                background: url(../assets/img/search_icon.svg) no-repeat;
+        }
+        &.c-nav__search {
+            background: url(../assets/img/search_icon.svg) no-repeat;
+            &:hover {
+                background: url(../assets/img/search_icon_white.svg) no-repeat;
+                a {
+                    color: $white;
+                }
             }
-            &.c-nav__faq {
-                background: url(../assets/img/q_icon.svg) no-repeat;
-            }
-            a {
-                margin: 0 0 0 20px;
+        }
+        &.c-nav__faq {
+            background: url(../assets/img/q_icon.svg) no-repeat;
+            &:hover {
+                background: url(../assets/img/q_icon_white.svg) no-repeat;
+                a {
+                    color: $white;
+                }
             }
         }
     }
     .title {
         display: none;
+        color: $brown-text;
+        margin-left: 15px;
     }
     @media only screen and (min-width: 940px) {
         .title {
