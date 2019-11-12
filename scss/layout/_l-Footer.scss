@@ -1,6 +1,7 @@
 .l-footer-wrapper {
     display: block;
     background-color: $default-gray;
+    padding: 15px 0;
     @media only screen and (min-width: 940px) {
         & {
             display: none;
@@ -12,31 +13,41 @@
         display: inline-block;
         width: 100%;
         .c-footer__title {
-            margin-bottom: 15px;
+            font-size: 14px;
+            margin-top: unset;
+            color: $brown-text;
+            font-weight: bold;
         }
         .c-footer__logo {
             height: 80%;
             max-width: 190px;
-            margin: auto;
-            span {
-                margin-left: 12%;
-            }
-            .footer-icon {
-                height: 80%;
-                width: 100%;
-                background: url(../assets/img/logo_l.svg) no-repeat 35% 100%;
-            }
+            margin: 0 auto 30px auto;
         }
-        .c-footer__button {
-            height: auto;
-            margin: 5% 0 5% 0;
-            button {
-                float: left;
-                &.footer-button-patoro {
-                    width: 47%;
+        .c-footer__submenu {
+            display: inline-block;
+            .submenu-wrapper {
+                display: flex;
+                font-size: 14px;
+                .submenu-patoro {
+                    color: $patoro-brown;
+                    background-color: $white;
+                    text-decoration: none;
+                    padding: 2px 5px;
+                    margin-right: 5px;
+                    &:hover {
+                        background-color: $hover-black;
+                        color: $white;
+                    }
                 }
-                &.footer-button-artist {
-                    width: 53%;
+                .submenu-artist {
+                    background-color: $patoro-brown;
+                    color: $white;
+                    text-decoration: none;
+                    padding: 2px 5px;
+                    &:hover {
+                        background-color: $white;
+                        color: $patoro-brown;
+                    }
                 }
             }
         }
