@@ -15,13 +15,17 @@ html {
 @import "./layout/_l-Header";
 @import "./layout/_l-Footer";
 @import "./layout/_li-aside";
+@import "./layout/_l-artwork";
+
+// project
+@import "./object/project/_p-profile";
+@import "./object/project/_p-log";
+@import "./object/project/_p-artwork__content";
+@import "./object/project/_p-artwork__log";
 
 // component
 @import "./object/component/_c-nav__logo";
 @import "./object/component/_c-header__nav";
 @import "./object/component/_c-header__service";
 @import "./object/component/_c-header__menu";
-
-// project
-@import "./object/project/_p-profile";
-@import "./object/project/_p-log";
+@import "./object/component/_c-log-list";

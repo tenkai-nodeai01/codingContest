@@ -1,0 +1,75 @@
+.c-log-list {
+    padding: 15px 4% 15px 4%;
+
+    .year-list {
+        display: flex;
+        display: -webkit-flex;
+        margin: 0 0 10px 0;
+        color: $brown-text;
+    }
+
+    .c-log-year {
+        &::after {
+            content: "";
+            width: 1px;
+            height: 20px;
+            position: absolute;
+            background: $brown-text;
+            display: inline-block;
+            margin-left: 4px;
+        }
+    }
+
+    .c-log-info {
+        margin-left: 10px;
+
+        .info-content {
+            display: inline;
+        }
+
+        .linked-content {
+            padding: 3px;
+            background-color: $hover-yellow;
+            text-decoration: none;
+            &:hover {
+                color: $white;
+                background-color: $hover-black;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 940px) {
+        .year-list {
+            margin: 0;
+        }
+        .c-log-year {
+            padding: 12px 15px;
+            width: 200px;
+            text-align: right;
+            background-color: $less-brown;
+            &::after {
+                display: none;
+            }
+        }
+        .c-log-info {
+            padding: 12px 15px;
+        }
+        .ol-wrapper {
+            background-color: $vague-white;
+        }
+
+        .year-list:first-child {
+            .c-log-year,
+            .c-log-info {
+                padding: 25px 15px 12px 15px;
+            }
+        }
+
+        .year-list:last-child {
+            .c-log-year,
+            .c-log-info {
+                padding: 12px 15px 25px 15px;
+            }
+        }
+    }
+}

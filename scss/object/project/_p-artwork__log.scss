@@ -1,0 +1,38 @@
+.p-artwork__log {
+    .p-log-header {
+        padding: 10px 0 0 35px;
+        color: $hover-black;
+        margin: unset;
+        &:before {
+            content: "";
+            display: inline-block;
+            height: 22px;
+            width: 22px;
+            background-image: url(../assets/img/light.svg);
+            position: absolute;
+            left: 7px;
+        }
+    }
+
+    .p-log-content {
+        background-color: $vague-white;
+
+        @media only screen and (max-width: 440px) {
+            & {
+                font-size: 12px;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 940px) {
+        .p-log-header {
+            padding: 10px 0 0 75px;
+            &:before {
+                left: 45px;
+            }
+        }
+        .p-log-content {
+            background-color: $default-gray;
+        }
+    }
+}
