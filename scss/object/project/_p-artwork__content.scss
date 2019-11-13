@@ -1,0 +1,32 @@
+.p-artwork__content {
+    background-color: $vague-white;
+    padding: 0 5px 0 5px;
+
+    .content-image {
+        margin: 0 15px 30px;
+        padding: 20px 0 0 0;
+        .image-element {
+            width: 100%;
+        }
+    }
+
+    .artwork-detail {
+        margin-left: 15px;
+        .title-detail {
+            font-size: 16px;
+            color: $brown-text;
+            font-weight: normal;
+        }
+    }
+
+    @media only screen and (min-width: 940px) {
+        & {
+            max-width: 1280px;
+        }
+        .content-image {
+            width: 80%;
+            padding-left: 5%;
+            margin-right: 5%;
+        }
+    }
+}

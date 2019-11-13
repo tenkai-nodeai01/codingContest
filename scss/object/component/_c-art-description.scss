@@ -1,0 +1,19 @@
+.c-art-description {
+    margin: 0;
+    display: inline-block;
+    .description-term {
+        padding: 2px 5px;
+        float: left;
+        background-color: $light-yellow-text;
+        margin-left: 3px;
+
+        .description-term__text {
+            text-decoration: none;
+            color: $white;
+        }
+
+        &:hover {
+            background-color: $hover-black;
+        }
+    }
+}

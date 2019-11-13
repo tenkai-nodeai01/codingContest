@@ -1,5 +1,8 @@
 .c-header__nav {
     width: 100%;
+    .nav-ul {
+        padding: 0 0 0 30px;
+    }
     .nav-list {
         display: inline;
         cursor: pointer;
