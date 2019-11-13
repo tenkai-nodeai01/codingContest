@@ -26,13 +26,13 @@
             display: -webkit-flex;
         }
         .content-image {
-            width: calc((((100% - 135px) / 10) * 4) + 65px);
-            padding-left: calc((100% - 135px) / 10);
-            margin-right: calc((100% - 135px) / 10);
+            width: 40%;
+            padding-left: 7%;
+            margin-right: 10%;
             padding-top: 30px;
         }
         .artwork-detail {
-            width: calc((((100% - 135px) / 10) * 5) + 45px);
+            width: 60%;
             padding-top: 30px;
             margin-right: 46px;
         }
