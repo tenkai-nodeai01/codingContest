@@ -1,8 +1,7 @@
 .p-profile {
     width: 100%;
-    height: 100%;
     .c-profile {
-        background: white;
+        background: $white;
         .c-profile__background {
             height: 192px;
             background: url(../assets/img/iStock-994961612.jpg) no-repeat 100% 100%;
@@ -22,38 +21,52 @@
     }
     .c-work {
         height: auto;
-        width: 100%;
         background-color: white;
+        padding: 15px 20px;
         .c-work__title {
-            height: 20%;
-            margin: 0 0 11px 0;
-        }
-        .c-work__img {
-            height: 70%;
-            overflow: auto;
-            & figure {
-                width: 35%;
-                height: 100%;
-                margin: unset;
-                float: left;
-                img {
-                    height: 133px;
-                    width: 206px;
-                }
+            margin: 0;
+            display: inline-block;
+            font-weight: normal;
+            color: $brown-text;
+            margin: 0 15px 0 0;
+            &:after {
+                content: "";
+                width: 1px;
+                height: 20px;
+                background-color: #727262;
+                position: absolute;
+                margin: 2px 0 0 9px;
             }
-            @media only screen and (min-width: 940px) {
-                & {
-                    padding: 15px;
-                    height: 268px;
-                    overflow: unset;
-                    background-color: $white;
-                    figure {
-                        height: 50%;
-                        width: 50%;
-                        float: left;
+        }
+        .title-favorite {
+            display: inline-block;
+            margin: 0;
+            color: $light-yellow-text;
+        }
+        .c-own__img {
+            .own-img__ul {
+                display: -ms-flexbox;
+                display: flex;
+                overflow-x: scroll;
+                padding: 0;
+                .own-img__list {
+                    list-style: none;
+                    .own-img-el {
+                        height: 20vw;
+                        max-height: 140px;
                     }
                 }
             }
+        }
+    }
+
+    // サイズによって、必要な調整はここに書きます
+    @media only screen and (min-width: 940px) {
+        .c-profile {
+            margin: 0 0 15px 0;
+        }
+        .c-work {
+
         }
     }
 }

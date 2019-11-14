@@ -19,14 +19,14 @@ const paths = {
   }
 };
 
-gulp.task('webserver', function() {
-    gulp.src(paths.app.main)
-      .pipe(webserver({
-        livereload: true,
-        directoryListing: true,
-        open: 'index.html'
-      }));
-  });
+gulp.task('webserver', function () {
+  gulp.src(paths.app.main)
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: true,
+      open: 'index.html'
+    }));
+});
 
 gulp.task('sass', done => {
   gulp.src(paths.src.scss).pipe(sourcemaps.init()).pipe(sass({

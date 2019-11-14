@@ -1,5 +1,6 @@
 .l-aside-wrapper {
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px 10px 5px;
+    width: auto;
     .l-aside__header {
         .header-logo {
             background: url(../assets/img/light.svg) no-repeat 100% 100%;
@@ -7,6 +8,18 @@
             width: 5%;
             height: 20px;
             margin: 0 2% 0 0;
+        }
+    }
+
+    @media only screen and (min-width: 940px) {
+        & {
+
+        }
+    }
+
+    @media only screen and (min-width: 1280px) {
+        & {
+
         }
     }
 }
