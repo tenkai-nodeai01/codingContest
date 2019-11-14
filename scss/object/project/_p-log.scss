@@ -1,24 +1,36 @@
 .p-log {
-    ul {
+    .log-list-ol {
         list-style: none;
         padding: unset;
-        li {
+        .log-list__el {
             padding: 2%;
             background-color: $less-brown;
             margin: 0 0 1% 0;
+            .log-list__header {
+                margin: 0;
+                font-weight: normal;
+                color: $brown-text;
+                &:after {
+                    content: "";
+                    float: right;
+                    margin-top: 10px;
+                    border-top: 8px solid #727262;
+                    border-right: 6px solid transparent;
+                    border-bottom: 8px solid transparent;
+                    border-left: 6px solid transparent;
+                }
+            }
+
+            .log-list-p {
+                margin: 0;
+                color: $patoro-brown;
+            }
+
+            .list-img {
+                width: 30%;
+            }
         }
     }
-
-    #triangle-down {
-        width: 0;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-top: 20px solid black;
-        position: absolute;
-        right: 0;
-    }
-
 
     .c-log-logo {
         background: url(../assets/img/caret-down.svg) no-repeat;
