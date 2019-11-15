@@ -3,13 +3,18 @@
         list-style: none;
         padding: unset;
         .log-list__el {
-            padding: 2%;
             background-color: $less-brown;
             margin: 0 0 1% 0;
+
+            &:hover {
+                background-color: $vague-white;
+            }
+
             .log-list__header {
                 margin: 0;
                 font-weight: normal;
                 color: $brown-text;
+                padding: 2% 3% 2% 3%;
                 &:after {
                     content: "";
                     float: right;
@@ -21,13 +26,22 @@
                 }
             }
 
-            .log-list-p {
+            .list-img__wrapper {
+                display: flex;
+                display: -webkit-flex;
+                padding: 0 2% 2% 3%;
+            }
+
+            .log-list-head {
+                padding: 0 2% 2% 3%;
                 margin: 0;
                 color: $patoro-brown;
+                font-size: 16px;
             }
 
             .list-img {
-                width: 30%;
+                width: 40%;
+                margin-right: 15px;
             }
         }
     }
