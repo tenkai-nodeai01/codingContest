@@ -1,0 +1,76 @@
+.c-log-content {
+    list-style: none;
+    padding: 0;
+    .c-log-content__list {
+        padding: 2%;
+        margin-bottom: 1px;
+        background-color: $vague-white;
+        &:last-child {
+            margin-bottom: unset;
+        }
+
+        .log-title {
+            color: $patoro-brown;
+            .icon-wrapper {
+                display: inline;
+                .log-title__count {
+                    cursor: pointer;
+                    margin: 0 15px 0 0;
+                    &:after {
+                        content: "";
+                        width: 1px;
+                        height: 15px;
+                        background-color: $hover-black;
+                        position: absolute;
+                        margin: 3px 0 0 10px;
+                    }
+                    &:hover {
+                        color: $hover-black;
+                    }
+                }
+                .log-title__icon {
+                    width: 15px;
+                }
+            }
+            .log-title__head {
+                display: inline;
+                &:hover {
+                    color: $hover-black;
+                }
+            }
+        }
+
+        .log-subdetail {
+            margin-top: 10px;
+            .log-subdetail__location {
+                color: $hover-black;
+                &:hover {
+                    text-decoration: none;
+                }
+                &:before {
+                    content: url(../assets/img/map_icon.svg);
+                    width: 14px;
+                    height: auto;
+                    margin-right: 2px;
+                    display: inline-block;
+                }
+            }
+            .log-subdetail__tag {
+                padding: 0;
+                float: right;
+                .tag-detail-list {
+                    list-style: none;
+                    background-color: $patoro-brown;
+                    padding: 0 3px;
+                    .tag-detail-text {
+                        text-decoration: none;
+                        color: $white;
+                    }
+                    &:hover {
+                        background-color: $hover-black;
+                    }
+                }
+            }
+        }
+    }
+}

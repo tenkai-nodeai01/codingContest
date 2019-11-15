@@ -37,10 +37,14 @@
                 margin: 0;
                 color: $patoro-brown;
                 font-size: 16px;
+                &.beside-img {
+                    padding: 0;
+                }
             }
 
             .list-img {
                 width: 40%;
+                height: 100%;
                 margin-right: 15px;
             }
         }
