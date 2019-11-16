@@ -1,5 +1,5 @@
 .c-profile__subsection {
-    padding: 0 2%;
+    padding: 0 2% 2%;
     .user-keyword {
         list-style: none;
         padding: 0;
@@ -20,6 +20,68 @@
                     color: $white;
                 }
             }
+        }
+    }
+
+    .follow-section-wrapper {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        -webkit-box-pack: justify;
+        .follow-section {
+            padding: 0;
+            list-style: none;
+            display: inline;
+            margin: 2% 0 0 0;
+            .follow-section-list {
+                display: inline;
+                margin-right: 15px;
+                .follow-section-list__title {
+                    display: inherit;
+                }
+                .follow-section-list__number {
+                    display: inherit;
+                }
+            }
+        }
+    
+        .follow-button {
+            color: $patoro-brown;
+            padding: 1%;
+            border: solid 2px;
+            min-width: 7vw;
+            .follow-button__text {
+                color: $patoro-brown;
+                text-decoration: none;
+            }
+            &:hover {
+                color: $white;
+                background-color: $patoro-brown;
+                .follow-button__text {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .bio-comment-wrapper {
+        font-size: 14px;
+        .comment-text {
+            margin-bottom: 0;
+            color: $brown-text;
+        }
+        .bio-link {
+            color: $patoro-brown;
+            &:hover {
+                color: $hover-black;
+            }
+        }
+    }
+
+    .sns-icon-wrapper {
+        list-style: none;
+        .icon-list {
+
         }
     }
 }
