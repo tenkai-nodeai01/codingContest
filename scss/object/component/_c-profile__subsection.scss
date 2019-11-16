@@ -1,0 +1,25 @@
+.c-profile__subsection {
+    padding: 0 2%;
+    .user-keyword {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        display: -webkit-flex;
+        .user-keyword__list {
+            padding: 2px;
+            background: $hover-yellow;
+            margin: 0 2% 0 0;
+            .list-word {
+                text-decoration: none;
+                color: $hover-black;
+            }
+
+            &:hover {
+                background-color: $hover-black;
+                .list-word {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

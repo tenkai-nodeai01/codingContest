@@ -3,20 +3,12 @@
     .c-profile {
         background: $white;
         .c-profile__background {
-            height: 192px;
+            display: inline-block;
+            width: 100%;
+            height: 50vw;
+            max-height: 280px;
             background: url(../assets/img/iStock-994961612.jpg) no-repeat 100% 100%;
             background-size: cover;
-        }
-        .c-profile__thumbnail {
-            height: 78px;
-            width: 100%;
-            & figure img {
-                float: left;
-                border-radius: 50%;
-                height: 78px;
-                z-index: 11;
-                border: 2px solid #FAFAFA;
-            }
         }
     }
     .c-work {
@@ -68,9 +60,6 @@
     @media only screen and (min-width: 940px) {
         .c-profile {
             margin: 0 0 15px 0;
-        }
-        .c-work {
-
         }
     }
 }
