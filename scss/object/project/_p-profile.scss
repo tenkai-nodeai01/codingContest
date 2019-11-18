@@ -39,18 +39,17 @@
                 cursor: pointer;
             }
         }
-        .c-own__img {
-            .own-img__ul {
-                display: -ms-flexbox;
-                display: flex;
-                overflow-x: scroll;
-                padding: 0;
-                .own-img__list {
-                    list-style: none;
-                    .own-img-el {
-                        height: 20vw;
-                        max-height: 140px;
-                    }
+        .own-img__ul {
+            display: -ms-flexbox;
+            display: flex;
+            overflow-x: scroll;
+            padding: 0;
+            flex-wrap: wrap;
+            .own-img__list {
+                list-style: none;
+                .own-img-el {
+                    height: 20vw;
+                    max-height: 140px;
                 }
             }
         }
