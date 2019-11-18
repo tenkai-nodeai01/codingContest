@@ -115,4 +115,26 @@
             }
         }
     }
+
+    .user-description {
+        &:before {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 15px;
+            background: url(../assets/img/fav_icon.svg) 100% 100% no-repeat;
+        }
+        .user-description__list {
+            display: inline-block;
+            margin-right: 2%;
+            .description-keyword {
+                text-decoration: none;
+                font-size: 14px;
+                color: $patoro-brown;
+                &:hover {
+                    color: $hover-black;
+                }
+            }
+        }
+    }
 }
