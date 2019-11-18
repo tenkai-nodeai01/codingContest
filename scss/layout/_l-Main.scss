@@ -19,6 +19,7 @@
     background-color: $default-gray;
 }
 
+// main layout
 .l-content__wrapper {
     padding: 45px 0 0 0;
     overflow: auto;
@@ -28,10 +29,13 @@
     grid-template-areas:
     'main'
     'right';
+
+    // main要素
     .l-main-wrapper {
         width: auto;
     }
 
+    // 画面サイズが変わった時点で、gridの構成を変更する（カラムかられつに）
     @media only screen and (min-width: 940px) {
         & {
             padding: 107px 15px 0 15px;
@@ -45,6 +49,7 @@
         }
     }
 
+    // gridのサイズ（カラムの場合）
     @media only screen and (min-width: 1280px) {
         & {
             grid-template-columns: 40% 60%;

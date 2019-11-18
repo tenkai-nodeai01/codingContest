@@ -1,3 +1,5 @@
+// 作品ページのcomment要素
+
 .c-art-comment {
     padding: 0 0 15px 0;
 
@@ -16,6 +18,7 @@
             cursor: pointer;
         }
 
+        // 下向いて矢印
         .comment-wrapper__icon {
             content: "";
             float: right;
@@ -26,6 +29,7 @@
             border-left: 6px solid transparent;
         }
 
+        // 上向いてる矢印に変更
         &.is-active {
             .comment-wrapper__content {
                 display: inline-block;

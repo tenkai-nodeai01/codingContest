@@ -1,3 +1,6 @@
+// header
+// パトロについて、アーティストの申請
+
 .c-header__service {
     display: none;
     text-align: center;
@@ -22,7 +25,7 @@
         }
     }
 
-    // basic setting for button sizes
+    // サイズ変わったじてんの調整、表示非表示
     @media only screen and (min-width: 940px) {
         & {
             display: block;

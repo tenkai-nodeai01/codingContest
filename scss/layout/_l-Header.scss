@@ -1,3 +1,5 @@
+// headerのmain wrapper
+
 .l-header {
     width: 100%;
     height: 44px;
@@ -7,6 +9,8 @@
     position: fixed;
     background-color: $default-gray;
     z-index: 1;
+
+    // ここはlogoのwrapper
     .l-header__wrapper {
         display: flex;
         display: -webkit-flex;
@@ -19,6 +23,8 @@
         width: 40px;
         padding: 5px 0;
     }
+
+    // h1のcontainer
     .l-header__container {
         height: 100%;
         display: inline-block;
@@ -27,6 +33,7 @@
     }
 }
 
+// サイズ変わったじてんのwrapper調整
 @media only screen and (min-width: 940px) {
     .l-header {
         width: 100%;

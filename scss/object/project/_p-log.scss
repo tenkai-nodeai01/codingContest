@@ -1,7 +1,10 @@
+// インスピレーションログの中身
+
 .p-log {
     .log-list-ol {
         list-style: none;
         padding: unset;
+        // li ごとのスタイリング
         .log-list__el {
             background-color: $less-brown;
             margin: 0 0 1% 0;
@@ -10,11 +13,14 @@
                 background-color: $vague-white;
             }
 
+            // headerの日付
             .log-list__header {
                 margin: 0;
                 font-weight: normal;
                 color: $brown-text;
                 padding: 2% 3% 2% 3%;
+
+                // した矢印
                 &:after {
                     content: "";
                     float: right;
@@ -24,14 +30,29 @@
                     border-bottom: 8px solid transparent;
                     border-left: 6px solid transparent;
                 }
+
+                // openの場合
+                &.is-opened {
+                    &:after {
+                        content: "";
+                        float: right;
+                        margin-top: -2px;
+                        border-bottom: 8px solid #727262;
+                        border-right: 6px solid transparent;
+                        border-top: 8px solid transparent;
+                        border-left: 6px solid transparent;
+                    }
+                }
             }
 
+            // 開くなくても見える画像
             .list-img__wrapper {
                 display: flex;
                 display: -webkit-flex;
                 padding: 0 2% 2% 3%;
             }
 
+            // 開くなくても見えるheaderのtext
             .log-list-head {
                 padding: 0 2% 2% 3%;
                 margin: 0;
@@ -48,14 +69,5 @@
                 margin-right: 15px;
             }
         }
-    }
-
-    .c-log-logo {
-        background: url(../assets/img/caret-down.svg) no-repeat;
-        float: right;
-        height: 20px;
-        width: 15px;
-        background-size: contain;
-        cursor: pointer;
     }
 }

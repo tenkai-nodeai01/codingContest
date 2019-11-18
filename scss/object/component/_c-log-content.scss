@@ -1,14 +1,21 @@
+// asideの中身
+
 .c-log-content {
+    // ul
     list-style: none;
     padding: 0;
+
+    // li
     .c-log-content__list {
         padding: 2%;
         margin-bottom: 1px;
         background-color: $vague-white;
+
         &:last-child {
             margin-bottom: unset;
         }
 
+        // 日付のtitle
         .log-title {
             color: $patoro-brown;
             .icon-wrapper {

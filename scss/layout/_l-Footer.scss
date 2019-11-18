@@ -8,26 +8,35 @@
         }
     }
 
+    // footerの中身wrapper
     .c-footer {
         text-align: center;
         display: inline-block;
         width: 100%;
+
+        // footerのtitle
         .c-footer__title {
             font-size: 14px;
             margin-top: unset;
             color: $brown-text;
             font-weight: bold;
         }
+
+        // logo
         .c-footer__logo {
             height: 80%;
             max-width: 190px;
             margin: 0 auto 30px auto;
         }
+
+        // パトロについて・アーティストの申請
         .c-footer__submenu {
             display: inline-block;
             .submenu-wrapper {
                 display: flex;
                 font-size: 14px;
+
+                // パトロについてのボタン
                 .submenu-patoro {
                     color: $patoro-brown;
                     background-color: $white;
@@ -39,6 +48,8 @@
                         color: $white;
                     }
                 }
+
+                // アーティストの申請のボタン
                 .submenu-artist {
                     background-color: $patoro-brown;
                     color: $white;

@@ -1,55 +1,70 @@
+// headerのnav
+
 .c-header__nav {
     width: 100%;
-    .nav-ul {
-        padding: 0 0 0 30px;
-    }
-    .nav-list {
-        display: inline;
-        cursor: pointer;
-        margin-right: 30px;
-        transition: all 100ms 0s ease;
 
-        a {
-            margin: 0 0 0 20px;
-            text-decoration: none;
-            transition: all 100ms 0s ease;
-            color: $hover-black;
-        }
-
-        // set each icon
-        &.c-nav__map {
-            background: url(../assets/img/map_icon.svg) no-repeat;
-            &:hover {
-                background: url(../assets/img/map_icon_white.svg) no-repeat;
-                a {
-                    color: $white;
-                }
-            }
-        }
-        &.c-nav__search {
-            background: url(../assets/img/search_icon.svg) no-repeat;
-            &:hover {
-                background: url(../assets/img/search_icon_white.svg) no-repeat;
-                a {
-                    color: $white;
-                }
-            }
-        }
-        &.c-nav__faq {
-            background: url(../assets/img/q_icon.svg) no-repeat;
-            &:hover {
-                background: url(../assets/img/q_icon_white.svg) no-repeat;
-                a {
-                    color: $white;
-                }
-            }
-        }
-    }
+    // headerのtitle
     .title {
         display: none;
         color: $brown-text;
         margin-left: 15px;
     }
+
+    // ul
+    .nav-ul {
+        padding: 0 0 0 30px;
+
+        // li
+        .nav-list {
+            display: inline;
+            cursor: pointer;
+            margin-right: 30px;
+            transition: all 100ms 0s ease;
+
+            // text
+            .nav-list__text {
+                margin: 0 0 0 20px;
+                text-decoration: none;
+                transition: all 100ms 0s ease;
+                color: $hover-black;
+            }
+
+            // Map
+            &.c-nav__map {
+                background: url(../assets/img/map_icon.svg) no-repeat;
+                &:hover {
+                    background: url(../assets/img/map_icon_white.svg) no-repeat;
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+
+            // Search
+            &.c-nav__search {
+                background: url(../assets/img/search_icon.svg) no-repeat;
+                &:hover {
+                    background: url(../assets/img/search_icon_white.svg) no-repeat;
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+
+            // FAQ
+            &.c-nav__faq {
+                background: url(../assets/img/q_icon.svg) no-repeat;
+                &:hover {
+                    background: url(../assets/img/q_icon_white.svg) no-repeat;
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    // サイズ変わったじてんの調整
     @media only screen and (min-width: 940px) {
         .title {
             display: block;

@@ -1,5 +1,7 @@
 .p-profile {
     width: 100%;
+
+    // userのprofile section
     .c-profile {
         background: $white;
         .c-profile__background {
@@ -11,6 +13,8 @@
             background-size: cover;
         }
     }
+
+    // ユーザーの所有画像
     .c-work {
         height: auto;
         background-color: white;
@@ -30,6 +34,8 @@
                 margin: 2px 0 0 9px;
             }
         }
+
+        // お気に入り
         .title-favorite {
             display: inline-block;
             margin: 0;
@@ -39,6 +45,8 @@
                 cursor: pointer;
             }
         }
+
+        // 画像自体
         .own-img__ul {
             display: -ms-flexbox;
             display: flex;
@@ -86,6 +94,5 @@
             width: 95%;
         }
     }
-
 
 }

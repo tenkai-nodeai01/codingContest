@@ -1,14 +1,20 @@
+// user profileの subsection（avatarのした）
+
 .c-profile__subsection {
     padding: 0 2% 2%;
+    // ul
     .user-keyword {
         list-style: none;
         padding: 0;
         display: flex;
         display: -webkit-flex;
+        // li
         .user-keyword__list {
             padding: 2px;
             background: $hover-yellow;
             margin: 0 2% 0 0;
+
+            // li中の a 要素
             .list-word {
                 text-decoration: none;
                 color: $hover-black;
@@ -23,6 +29,7 @@
         }
     }
 
+    // フォロ・フォロワー
     .follow-section-wrapper {
         display: flex;
         display: -webkit-flex;
@@ -64,6 +71,7 @@
         }
     }
 
+    // userのbiodata
     .bio-comment-wrapper {
         font-size: 14px;
         .comment-text {
@@ -78,6 +86,7 @@
         }
     }
 
+    // snsのアイコン
     .sns-icon-wrapper {
         list-style: none;
         padding: 0;
@@ -94,6 +103,8 @@
                         opacity: 0;
                     }
                 }
+                // アイコンごと異なる要素
+                // hoverのversion（黒い）
                 &.twitter-wrapper:after {
                     content: url(../assets/img/twitter_icon_h.svg);
                 }
@@ -116,6 +127,7 @@
         }
     }
 
+    // userに紐づいてる要素
     .user-description {
         padding: 0;
         margin: 0;
