@@ -64,8 +64,24 @@
             &:hover {
                 color: $white;
                 background-color: $patoro-brown;
+                cursor: pointer;
                 .follow-button__text {
                     color: $white;
+                }
+            }
+
+            // 押された場合
+            &.is-active {
+                background-color: $patoro-brown;
+                .follow-button__text {
+                    color: $white;
+                }
+                &:hover {
+                    color: $patoro-brown;
+                    background-color: $white;
+                    .follow-button__text {
+                        color: $patoro-brown;
+                    }
                 }
             }
         }
