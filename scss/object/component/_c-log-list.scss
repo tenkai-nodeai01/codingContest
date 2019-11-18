@@ -41,6 +41,7 @@
     @media only screen and (min-width: 940px) {
         .year-list {
             margin: 0;
+            background-color: $vague-white;
         }
         .c-log-year {
             padding: 12px 15px;
@@ -53,9 +54,6 @@
         }
         .c-log-info {
             padding: 12px 15px;
-        }
-        .ol-wrapper {
-            background-color: $vague-white;
         }
 
         .year-list:first-child {
