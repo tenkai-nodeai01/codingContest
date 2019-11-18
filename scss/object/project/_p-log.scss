@@ -68,6 +68,12 @@
                 height: 100%;
                 margin-right: 15px;
             }
+
+            &.is-opened {
+                .c-log-content {
+                    display: block;
+                }
+            }
         }
     }
 }

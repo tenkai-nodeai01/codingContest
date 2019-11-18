@@ -4,6 +4,7 @@ window.onload = function () {
     for (let x = 0; x < headerEl.length; x++) {
       headerEl[x].addEventListener('click', function () {
         headerEl[x].classList.toggle('is-opened')
+        headerEl[x].parentElement.classList.toggle('is-opened')
       })
     }
   }
