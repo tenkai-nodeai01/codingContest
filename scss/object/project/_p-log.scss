@@ -69,10 +69,10 @@
                 margin-right: 15px;
             }
 
-            &.is-opened {
-                .c-log-content {
-                    display: block;
-                }
+            // headerを押したら
+            &.is-opened .c-log-content{
+                display: block;
+                min-height: 10vw;
             }
         }
     }
