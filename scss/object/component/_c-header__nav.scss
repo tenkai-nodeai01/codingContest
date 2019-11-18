@@ -61,6 +61,14 @@
                     }
                 }
             }
+
+            @media only screen and (max-width: 400px) {
+                & {
+                    margin-right: 20px;
+                    font-size: 12px;
+                }
+            }
+
         }
     }
 
