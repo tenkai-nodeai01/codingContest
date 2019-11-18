@@ -44,12 +44,13 @@
             display: flex;
             overflow-x: scroll;
             padding: 0;
-            flex-wrap: wrap;
             .own-img__list {
                 list-style: none;
+                margin-right: 2px;
                 .own-img-el {
                     height: 20vw;
                     max-height: 140px;
+                    width: 100%;
                 }
             }
         }
@@ -60,5 +61,31 @@
         .c-profile {
             margin: 0 0 15px 0;
         }
+
+        .own-img__ul {
+            margin-left: 15px;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            width: calc(100% - 30px);
+
+            .own-img__list {
+                width: calc(50% - 5px);
+                margin-right: 5px;
+                -o-object-fit: cover;
+                object-fit: cover;
+                height: 12vw;
+                margin-bottom: 5px;
+                overflow: hidden;
+                max-height: 140px;
+            }
+        }
     }
+
+    @media only screen and (min-width: 768px) {
+        .own-img__ul {
+            width: calc(100% - 45px);
+        }
+    }
+
+
 }
