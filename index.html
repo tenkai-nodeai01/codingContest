@@ -15,8 +15,8 @@
                         <div class="header-wrapper">
                             <h1 class="l-header__container">
                                 <a class="c-nav__logo" href="index.html" rel="home">
-                                    <img class="c-logo__small" alt="patoro-logo-small" src="../assets/img/logo_s.svg">
-                                    <img class="c-logo__large" alt="patoro-logo-large" src="../assets/img/logo_l.svg">
+                                    <img class="c-logo__small" alt="patoro-logo-small" src="./assets/img/logo_s.svg">
+                                    <img class="c-logo__large" alt="patoro-logo-large" src="./assets/img/logo_l.svg">
                                 </a>
                             </h1>
                         </div>
@@ -49,6 +49,7 @@
             </header>
             <!--headerの要素ここまで-->
             <div class="l-content__wrapper">
+                <!--profileページのため、profileの部分はmainになります-->
                 <main class="l-main-wrapper block-1">
                     <div class="p-profile">
                         <section class="c-profile">
@@ -60,6 +61,7 @@
                                 <h2 class="profile-name">ふじい　ふじこ</h2>
                             </div>
                             <div class="c-profile__subsection">
+                                <!--ユーザーのキーワード-->
                                 <ul class="user-keyword">
                                     <li class="user-keyword__list">
                                         <a href="" class="list-word">キューレーター</a>
@@ -68,12 +70,15 @@
                                         <a href="" class="list-word">パトロ</a>
                                     </li>
                                 </ul>
+                                <!--フォロー・フォロワーのsecion-->
                                 <div class="follow-section-wrapper">
                                     <ul class="follow-section">
+                                        <!--フォローの数が増えた場合、簡単にJSで処理できるため-->
                                         <li class="follow-section-list">
                                             <p class="follow-section-list__title">フォロー</p>
                                             <p class="follow-section-list__number">55</p>
                                         </li>
+                                        <!--フォロワーの数が増えた場合、簡単にJSで処理できるため-->
                                         <li class="follow-section-list">
                                             <p class="follow-section-list__title">フォロワー</p>
                                             <p class="follow-section-list__number">10</p>
@@ -83,10 +88,12 @@
                                         <a href="" class="follow-button__text">フォローする</a>
                                     </div>
                                 </div>
+                                <!--自己紹介section-->
                                 <div class="bio-comment-wrapper">
                                     <p class="comment-text">私は元気です</p>
                                     <a class="bio-link" href="http://www.fujicco.jp/">http://www.fujico.co.jp</a>
                                 </div>
+                                <!--SNSのアイコンまとめ-->
                                 <ul class="sns-icon-wrapper">
                                     <li class="icon-list">
                                         <a href="" class="icon-list__wrapper twitter-wrapper">
@@ -104,6 +111,7 @@
                                         </a>
                                     </li>
                                 </ul>
+                                <!--ユーザーの詳細タグ（ユーザーにassociateされるキーワード）-->
                                 <ul class="user-description">
                                     <li class="user-description__list">
                                         <a class="description-keyword" href="">BABYMETAL</a>
@@ -124,12 +132,14 @@
                                         <a class="description-keyword" href="">岩明均</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div><!--c-profile__subsection-->
                         </section>
+                        <!--所有のsection-->
                         <section class="c-work">
                             <h4 class="c-work__title">所有４点</h4>
                             <p class="title-favorite">お気に入り 36点</p>
                             <ul class="own-img__ul">
+                                <!--所有のlist-->
                                 <li class="own-img__list">
                                     <a href="">
                                         <img class="own-img-el" src="./assets/img/iStock-887755698.jpg" alt="owned-work-1">
@@ -152,19 +162,25 @@
                                 </li>
                             </ul>
                         </section>
-                    </div>
+                    </div><!--p-profile-->
                 </main>
+                <!--右側の部分はasideにする-->
                 <aside class="l-aside-wrapper block-2">
+                    <!--asideのheader-->
                     <header class="l-aside__header">
                         <div class="header-logo"></div>
                         <span>インスピレーションログ</span>
                     </header>
                     <section class="p-log">
                         <ol class="log-list-ol">
+                            <!--log-list-ol の list 1番目-->
                             <li class="log-list__1 log-list__el">
-                                <h4 class="log-list__header">2019年10月 3件</h4>
+                                <!--is-openedは開ける状況のクラス-->
+                                <h4 class="log-list__header is-opened">2019年10月 3件</h4>
                                 <ol class="c-log-content">
+                                    <!--最新sectionの情報list-->
                                     <li class="c-log-content__list">
+                                        <!--記事のタイトル-->
                                         <div class="log-title">
                                             <div class="log-title__wrapper">
                                                 <div class="icon-wrapper">
@@ -174,6 +190,7 @@
                                                 <h5 class="log-title__head">高畑勲展─日本のアニメーションに遺したもの</h5>
                                             </div>
                                         </div>
+                                        <!--記事に紐づいてるlocation-->
                                         <div class="log-subdetail">
                                             <a href="" class="log-subdetail__location">東京国立近代美術館</a>
                                             <ul class="log-subdetail__tag">
@@ -182,19 +199,23 @@
                                                 </li>
                                             </ul>
                                         </div>
+                                        <!--記事に紐づいてる画像-->
                                         <div class="img-wrapper">
                                             <img class="img-wrapper__el el-left" alt="tokyo-museum-image-1" src="./assets/img/tokyo-museum-1.jpeg">
                                             <img class="img-wrapper__el el-right" alt="tokyo-museum-image-2" src="./assets/img/tokyo-museum-2.jpeg">
                                         </div>
+                                        <!--記事のコメント、日付-->
                                         <p class="img-comment">-感動した。全部観るのに4時間かかった。高畑勲は天才。ジオラマ撮影OKだったよ</p>
                                         <p class="time-label"><time datetime="2019-10-10">2019.10.10</time></p>
-                                    </li>
+                                    </li><!--c-log-content__list-->
                                     <li class="c-log-content__list">
+                                        <!--記事のタイトル-->
                                         <div class="log-title">
                                             <div class="log-title__wrapper">
                                                 <h5 class="log-title__head">企画展「虫展 －デザインのお手本－」</h5>
                                             </div>
                                         </div>
+                                        <!--記事に紐づいてるlocation-->
                                         <div class="log-subdetail">
                                             <a href="" class="log-subdetail__location">21_21 DESIGN SIGHT</a>
                                             <ul class="log-subdetail__tag">
@@ -203,10 +224,12 @@
                                                 </li>
                                             </ul>
                                         </div>
+                                        <!--記事のコメント、日付-->
                                         <p class="img-comment">-面白かった。写真撮り忘れた。</p>
                                         <p class="time-label"><time datetime="2019-10-03">2019.10.3</time></p>
-                                    </li>
+                                    </li><!--c-log-content__list-->
                                     <li class="c-log-content__list">
+                                        <!--記事のタイトル-->
                                         <div class="log-title">
                                             <div class="log-title__wrapper">
                                                 <div class="icon-wrapper">
@@ -216,6 +239,7 @@
                                                 <h5 class="log-title__head">僕のワンダフルジャーニー</h5>
                                             </div>
                                         </div>
+                                        <!--記事に紐づいてるlocation-->
                                         <div class="log-subdetail">
                                             <a href="" class="log-subdetail__location">TOHOシネマズ日本橋</a>
                                             <ul class="log-subdetail__tag">
@@ -227,32 +251,45 @@
                                         <div class="img-wrapper img-as-background">
                                             <img alt="toho-girl-dog" class="crop-img" src="./assets/img/girl-dog.jpg">
                                         </div>
+                                        <!--記事のコメント、日付-->
                                         <p class="img-comment">-犬かわいいよ犬</p>
                                         <p class="time-label"><time datetime="2019-10-01">2019.10.1</time></p>
-                                    </li>
-                                </ol>
+                                    </li><!--c-log-content__list-->
+                                </ol><!--c-log-content-->
                             </li>
+                            <!--log-list-ol の list 2番目-->
                             <li class="log-list__2 log-list__el">
                                 <h4 class="log-list__header">2019年 9月  15件</h4>
+                                <!--何もないから display none-->
+                                <ol class="c-log-content" style="display: none;"></ol>
                             </li>
+                            <!--log-list-ol の list 3番目-->
                             <li class="log-list__3 log-list__el">
                                 <h4 class="log-list__header">2019年 8月  3件</h4>
                                 <h5 class="log-list-head">「愛すべき猫たち」　公開</h5>
+                                <!--何もないから display none-->
+                                <ol class="c-log-content" style="display: none;"></ol>
                             </li>
+                            <!--log-list-ol の list 4番目-->
                             <li class="log-list__4 log-list__el">
                                 <h4 class="log-list__header">2019年 6月  2件</h4>
                                 <div class="list-img__wrapper">
                                     <img class="list-img" src="./assets/img/iStock-887755698.jpg" alt="list-work-4">
                                     <h5 class="log-list-head beside-img">「山形聡子《虹と光》2010年」所有</h5>
                                 </div>
+                                <!--何もないから display none-->
+                                <ol class="c-log-content" style="display: none;"></ol>
                             </li>
+                            <!--log-list-ol の list 5番目-->
                             <li class="log-list__5 log-list__el">
                                 <h4 class="log-list__header">2019年 6月  1件</h4>
+                                <!--何もないから display none-->
+                                <ol class="c-log-content" style="display: none;"></ol>
                             </li>
-                        </ol>
+                        </ol><!--log-list-ol-->
                     </section>
                 </aside>
-            </div>
+            </div> <!--l-content__wrapper-->
             <!--footerの要素-->
             <footer class="l-footer-wrapper block-3">
                 <div class="c-footer">
@@ -260,7 +297,7 @@
                     <p class="c-footer__title">創造力はぼくらの手の中にある</p>
                     <div class="c-footer__logo">
                         <!--footerのlogo-->
-                        <img class="c-logo__large" alt="patoro-logo-large" src="../assets/img/logo_l.svg">
+                        <img class="c-logo__large" alt="patoro-logo-large" src="./assets/img/logo_l.svg">
                     </div>
                     <div class="c-footer__submenu">
                         <div class="submenu-wrapper">
@@ -271,6 +308,7 @@
                     </div>
                 </div><!--c-footer-->
             </footer>
-        </div>
+        </div><!--l-content-->
+        <script src="../js/main.js"></script>
     </body>
 </html>
