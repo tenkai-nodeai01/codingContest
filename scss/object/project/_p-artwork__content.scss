@@ -1,17 +1,23 @@
+// 作品ページの詳細要素
+
 .p-artwork__content {
     background-color: $vague-white;
     padding: 0 5px 0 5px;
 
+    // 作品の画像
     .content-image {
         margin: 0 15px 30px;
         padding: 20px 0 0 0;
+        // imgの要素
         .image-element {
             width: 100%;
         }
     }
 
+    // 詳細のul
     .artwork-detail {
         margin-left: 15px;
+        // liの要素
         .title-detail {
             font-size: 16px;
             color: $brown-text;
@@ -19,18 +25,23 @@
         }
     }
 
+    // サイズ変わる時点の調整
     @media only screen and (min-width: 940px) {
+        // 本要素
         & {
             width: 100%;
             display: flex;
             display: -webkit-flex;
         }
+        // 作品画像のimg wrapper
         .content-image {
             width: 40%;
             padding-left: 7%;
             margin-right: 10%;
             padding-top: 30px;
         }
+
+        // ulの要素
         .artwork-detail {
             width: 60%;
             padding-top: 30px;

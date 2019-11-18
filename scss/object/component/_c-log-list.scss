@@ -1,6 +1,10 @@
+// 作品ログのlist
+// 再利用できるようになるため、componentにした
+
 .c-log-list {
     padding: 15px 4% 15px 4%;
 
+    // li の要素
     .year-list {
         display: flex;
         display: -webkit-flex;
@@ -8,6 +12,7 @@
         color: $brown-text;
     }
 
+    // 年のwrapper
     .c-log-year {
         &::after {
             content: "";
@@ -20,6 +25,7 @@
         }
     }
 
+    // 年ごとの細かい情報
     .c-log-info {
         margin-left: 10px;
 
@@ -38,6 +44,7 @@
         }
     }
 
+    // 画面サイズが変わった時点で、構成、背景の色等が変更されるので、細かい調整が必要
     @media only screen and (min-width: 940px) {
         .year-list {
             margin: 0;
@@ -56,6 +63,7 @@
             padding: 12px 15px;
         }
 
+        // listの最初の子要素のpadding
         .year-list:first-child {
             .c-log-year,
             .c-log-info {
@@ -63,6 +71,7 @@
             }
         }
 
+        // listの最後の子要素のpadding
         .year-list:last-child {
             .c-log-year,
             .c-log-info {
