@@ -1,5 +1,4 @@
 window.onload = function () {
-
   // aside section event listener
   let asideShowEventListener = function () {
     let headerEl = document.getElementsByClassName('log-list__header')
@@ -39,7 +38,7 @@ window.onload = function () {
       listEl[x].addEventListener('click', function (event) {
         event.preventDefault()
         let classOfEl = listEl[x].parentElement.className.replace(' ', '').replace('icon-list__wrapper', '')
-        let linkOpen = ['', ''];
+        let linkOpen = ['', '']
 
         switch (classOfEl) {
           case ('twitter-wrapper') :
@@ -70,8 +69,22 @@ window.onload = function () {
     }
   }
 
+  let subSectionLocation = function () {
+    let locationText = document.getElementsByClassName('log-subdetail__location')
+    for (let x = 0; x < locationText.length; x++) {
+      locationText[x].addEventListener('click', function (event) {
+        event.preventDefault()
+
+        const urlQuery = locationText[x].innerText.replace(' ', '+').replace(' ', '+').replace('　', '+').replace ('_', '+')
+
+        window.open('http://map.google.com/?q=' + urlQuery, '_blank')
+      })
+    }
+  }
+
   followButton()
   asideShowEventListener()
   snsLink()
   userDescription()
+  subSectionLocation()
 }
