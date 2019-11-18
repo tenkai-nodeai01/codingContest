@@ -44,7 +44,7 @@
                 }
             }
         }
-    
+
         .follow-button {
             color: $patoro-brown;
             padding: 1%;
@@ -80,8 +80,39 @@
 
     .sns-icon-wrapper {
         list-style: none;
+        padding: 0;
+        display: flex;
+        display: -webkit-flex;
         .icon-list {
+            display: inline-block;
+            margin: 0 5% 0 0;
+            .icon-list__wrapper {
+                .sns-icon-el {
+                    width: 35px;
+                    position: absolute;
+                    &:hover {
+                        opacity: 0;
+                    }
+                }
+                &.twitter-wrapper:after {
+                    content: url(../assets/img/twitter_icon_h.svg);
+                }
 
+                &.instagram-wrapper:after {
+                    content: url(../assets/img/insta_icon_h.svg);
+                }
+
+                &.facebook-wrapper:after {
+                    content: url(../assets/img/facebook_icon_h.svg);
+                }
+
+                &:after {
+                    width: 35px;
+                    display: inline-block;
+                    opacity: 1;
+                    z-index: 0;
+                }
+            }
         }
     }
 }
