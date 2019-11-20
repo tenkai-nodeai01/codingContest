@@ -1,7 +1,7 @@
 .l-footer-wrapper {
     display: block;
     background-color: $default-gray;
-    padding: 15px 0;
+    padding-bottom: 15px;
     @media only screen and (min-width: 940px) {
         & {
             display: none;
@@ -16,10 +16,10 @@
 
         // footerのtitle
         .c-footer__title {
-            font-size: 14px;
+            font-size: 13px;
             margin-top: unset;
             color: $brown-text;
-            font-weight: bold;
+            font-weight: 500;
         }
 
         // logo
@@ -41,8 +41,9 @@
                     color: $patoro-brown;
                     background-color: $white;
                     text-decoration: none;
-                    padding: 2px 5px;
+                    padding: 3px 5px;
                     margin-right: 5px;
+                    font-size: 13px;
                     &:hover {
                         background-color: $hover-black;
                         color: $white;

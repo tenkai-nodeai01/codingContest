@@ -1,7 +1,7 @@
 // user profileの subsection（avatarのした）
 
 .c-profile__subsection {
-    padding: 0 2% 2%;
+    padding: 0 4% 3%;
     // ul
     .user-keyword {
         list-style: none;
@@ -43,6 +43,7 @@
             .follow-section-list {
                 display: inline;
                 margin-right: 15px;
+                font-weight: 200;
                 .follow-section-list__title {
                     display: inherit;
                 }
@@ -60,6 +61,7 @@
             .follow-button__text {
                 color: $patoro-brown;
                 text-decoration: none;
+                font-weight: 200;
             }
             &:hover {
                 color: $white;
@@ -96,6 +98,8 @@
         }
         .bio-link {
             color: $patoro-brown;
+            text-decoration: none;
+            font-weight: 300;
             &:hover {
                 color: $hover-black;
             }
@@ -161,6 +165,7 @@
                 text-decoration: none;
                 font-size: 14px;
                 color: $patoro-brown;
+                font-weight: 200;
                 &:hover {
                     color: $hover-black;
                 }

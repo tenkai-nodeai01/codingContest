@@ -9,9 +9,18 @@
         .header-logo {
             background: url(../assets/img/light.svg) no-repeat 100% 100%;
             float: left;
-            width: 5%;
-            height: 20px;
+            width: 6%;
+            height: 25px;
             margin: 0 2% 0 0;
+        }
+
+        // inspirationのtext
+        .header-text {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 3px 0 0 0;
+            display: inline-block;
+            color: $hover-black;
         }
     }
 }
