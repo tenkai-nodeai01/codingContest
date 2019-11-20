@@ -2,13 +2,13 @@
 // 作品の詳細（隣に書いてあるlist）
 
 .c-art-subdetail {
-    width: calc(100% - 15px);
     .c-art-subdetail__list {
-        padding: unset;
+        padding: 0 0 0 15px;
         list-style: none;
         .subdetail-list__child {
             margin-bottom: 5px;
             color: $brown-text;
+            font-weight: 300;
             .list-text {
                 color: $patoro-brown;
                 text-decoration: none;

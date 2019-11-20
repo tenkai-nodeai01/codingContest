@@ -1,7 +1,7 @@
 // 作品ページの作品詳細（キーワード）
 
 .c-art-description {
-    margin: 0;
+    margin: 0 0 0 15px;
     display: inline-block;
     list-style: none;
     padding: 0;
@@ -10,10 +10,13 @@
         float: left;
         background-color: $patoro-brown;
         margin-left: 3px;
+        min-width: 35px;
+        text-align: center;
 
         .description-term__text {
             text-decoration: none;
             color: $white;
+            font-weight: 200;
         }
 
         &:hover {

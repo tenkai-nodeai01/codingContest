@@ -2,7 +2,7 @@
 
 .p-artwork__content {
     background-color: $vague-white;
-    padding: 0 5px 0 5px;
+    padding: 0 1%;
 
     // 作品の画像
     .content-image {
@@ -17,12 +17,15 @@
 
     // 詳細のul
     .artwork-detail {
-        margin-left: 15px;
+        .artwork-detail__title {
+            margin: 0 0 0 15px;
+        }
+
         // liの要素
         .title-detail {
             font-size: 16px;
             color: $brown-text;
-            font-weight: normal;
+            font-weight: 300;
         }
     }
 

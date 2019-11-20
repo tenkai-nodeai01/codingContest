@@ -12,22 +12,11 @@
         color: $brown-text;
     }
 
-    // 年のwrapper
-    .c-log-year {
-        &::after {
-            content: "";
-            width: 1px;
-            height: 20px;
-            position: absolute;
-            background: $brown-text;
-            display: inline-block;
-            margin-left: 4px;
-        }
-    }
-
     // 年ごとの細かい情報
     .c-log-info {
         margin-left: 10px;
+        max-width: 40vw;
+        position: relative;
 
         .info-content {
             display: inline;
@@ -42,6 +31,16 @@
                 background-color: $hover-black;
             }
         }
+
+        &:before {
+            content: "";
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            background: $brown-text;
+            display: inline-block;
+            margin-left: -5px;
+        }
     }
 
     // 画面サイズが変わった時点で、構成、背景の色等が変更されるので、細かい調整が必要
@@ -55,12 +54,12 @@
             width: 200px;
             text-align: right;
             background-color: $less-brown;
-            &::after {
-                display: none;
-            }
         }
         .c-log-info {
             padding: 12px 15px;
+            &:before {
+                display: none;
+            }
         }
 
         // listの最初の子要素のpadding
