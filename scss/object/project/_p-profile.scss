@@ -18,7 +18,7 @@
     .c-work {
         height: auto;
         background-color: white;
-        padding: 15px 20px;
+        padding: 2% 0 2% 5%;
         .c-work__title {
             display: inline-block;
             font-weight: 500;
@@ -71,10 +71,9 @@
         }
 
         .own-img__ul {
-            margin-left: 15px;
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-            width: calc(100% - 30px);
+            width: 96%;
 
             .own-img__list {
                 width: calc(50% - 5px);
@@ -86,12 +85,6 @@
                 overflow: hidden;
                 max-height: 140px;
             }
-        }
-    }
-
-    @media only screen and (min-width: 768px) {
-        .own-img__ul {
-            width: 95%;
         }
     }
 

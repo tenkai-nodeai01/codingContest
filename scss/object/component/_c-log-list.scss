@@ -8,8 +8,12 @@
     .year-list {
         display: flex;
         display: -webkit-flex;
-        margin: 0 0 10px 0;
+        margin: 0 0 12px 0;
         color: $brown-text;
+
+        &:last-child {
+            margin: 0;
+        }
     }
 
     // 年ごとの細かい情報
