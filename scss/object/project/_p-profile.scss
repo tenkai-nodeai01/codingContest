@@ -24,13 +24,29 @@
             background-color: $vague-white;
 
             .title-wrapper {
-                width: 96%;
-                margin: auto;
+                width: auto;
+                margin: 0 0 0 5%;
+                @media only screen and (min-width: 940px) {
+                    & {
+                        width: 92%;
+                        margin: 2% auto;
+                    }
+                }
+
+
                 .c-work__title {
                     display: inline-block;
                     font-weight: 500;
                     color: $brown-text;
                     margin: 0 15px 0 0;
+                    font-size: 14px;
+
+                    @media only screen and (min-width: 940px) {
+                        & {
+                            font-size: 16px;
+                        }
+                    }
+
                     &:after {
                         content: "";
                         width: 1px;
@@ -47,6 +63,14 @@
                     margin: 0;
                     color: $patoro-brown;
                     font-weight: 500;
+                    font-size: 14px;
+
+                    @media only screen and (min-width: 940px) {
+                        & {
+                            font-size: 16px;
+                        }
+                    }
+
                     &:hover {
                         color: $hover-black;
                         cursor: pointer;
@@ -61,7 +85,7 @@
             display: flex;
             overflow-x: scroll;
             padding: 0;
-            margin-left: calc(3% - 4px);
+            margin-left: calc(5% - 4px);
             .own-img__list {
                 list-style: none;
                 margin-right: 2px;
@@ -80,14 +104,10 @@
         }
 
         .c-work__wrapper {
-            .title-wrapper {
-                width: 94% !important;
-            }
-
             .own-img__ul {
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
-                width: 96%;
+                width: 92%;
 
                 .own-img__list {
                     width: calc(50% - 5px);
