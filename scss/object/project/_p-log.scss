@@ -19,6 +19,13 @@
                 font-weight: 300;
                 color: $hover-black;
                 padding: 2% 3% 2% 3%;
+                font-size: 14px;
+
+                @media only screen and (min-width: 768px) {
+                    & {
+                        font-size: 16px;
+                    }
+                }
 
                 // した矢印
                 &:after {
@@ -59,13 +66,20 @@
                 color: $patoro-brown;
                 font-size: 14px;
                 font-weight: 500;
+
+                @media only screen and (min-width: 768px) {
+                    & {
+                        font-size: 16px;
+                    }
+                }
+
                 &.beside-img {
                     padding: 0;
                 }
             }
 
             .list-img {
-                width: 40%;
+                width: 38%;
                 height: 100%;
                 margin-right: 15px;
             }
