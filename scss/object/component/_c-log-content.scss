@@ -16,7 +16,7 @@
             margin-bottom: unset;
         }
 
-        // 日付のtitle
+        // logのかくlistのタイトル
         .log-title {
             color: $patoro-brown;
             .icon-wrapper {
@@ -50,6 +50,7 @@
             }
         }
 
+        // locationのwrapper
         .log-subdetail {
             margin-top: 10px;
             .log-subdetail__location {
@@ -95,6 +96,8 @@
                 }
             }
         }
+
+        // 画像のコメント
         .img-comment {
             margin: 1% 0 0 0;
             font-size: 14px;
@@ -106,12 +109,16 @@
                 }
             }
         }
+
+        // 日付
         .time-label {
             margin: 0;
             text-align: right;
             font-size: 12px;
             color: $brown-text;
         }
+
+        // 画像
         .img-wrapper {
             margin: 2% 0 0 0;
             .img-wrapper__el {

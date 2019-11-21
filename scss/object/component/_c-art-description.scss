@@ -5,6 +5,11 @@
     display: inline-block;
     list-style: none;
     padding: 0;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+
     .description-term {
         padding: 2px 5px;
         float: left;

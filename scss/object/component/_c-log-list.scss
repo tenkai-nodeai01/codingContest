@@ -3,6 +3,11 @@
 
 .c-log-list {
     padding: 15px 4% 15px 4%;
+    margin-top: 0;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 16px;
+    }
 
     // li の要素
     .year-list {
@@ -19,7 +24,7 @@
     // 年ごとの細かい情報
     .c-log-info {
         margin-left: 10px;
-        max-width: 40vw;
+        max-width: 43vw;
         position: relative;
 
         .info-content {
@@ -81,5 +86,10 @@
                 padding: 12px 15px 25px 15px;
             }
         }
+    }
+
+
+    @media only screen and (min-width: 1280px) {
+        padding: 15px 12% 10% 12%;
     }
 }

@@ -2,19 +2,32 @@
 
 .p-artwork__log {
     .p-log-header {
-        padding: 10px 0 0 37px;
+        padding: 10px 0 10px 35px;
         color: $hover-black;
         margin: unset;
         font-weight: 500;
+        font-size: 14px;
+
         // 作品ログのheader icon
         &:before {
             content: "";
             display: inline-block;
-            height: 24px;
-            width: 24px;
+            height: 22px;
+            width: 22px;
             background: url(../assets/img/light.svg) no-repeat;
             position: absolute;
             left: 7px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            font-size: 22px;
+            padding: 10px 0 10px 42px;
+
+            &:before {
+                height: 26px;
+                width: 26px;
+                left: 8px;
+            }
         }
     }
 

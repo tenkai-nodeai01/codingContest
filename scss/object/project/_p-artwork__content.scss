@@ -11,7 +11,6 @@
         // imgの要素
         .image-element {
             width: 100%;
-            height: 100%;
         }
     }
 
@@ -26,17 +25,24 @@
             font-size: 16px;
             color: $brown-text;
             font-weight: 300;
+            @media only screen and (min-width: 768px) {
+                font-size: 18px;
+            }
         }
+    }
+
+    @media only screen and (min-width: 768px) {
+        padding: 2% 6%;
     }
 
     // サイズ変わる時点の調整
     @media only screen and (min-width: 940px) {
         // 本要素
-        & {
-            width: 100%;
-            display: flex;
-            display: -webkit-flex;
-        }
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        padding: 0;
+
         // 作品画像のimg wrapper
         .content-image {
             width: 40%;
