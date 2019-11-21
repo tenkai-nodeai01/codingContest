@@ -10,6 +10,7 @@
         line-height: 44px;
         background-color: $white;
         color: $hover-black;
+        font-size: 14px;
         &:hover {
             background-color: $hover-yellow;
             cursor: pointer;
@@ -19,6 +20,7 @@
             width: 150px;
             text-align: center;
             line-height: 90px;
+            font-size: 16px;
         }
     }
 }

@@ -8,6 +8,7 @@
         display: none;
         color: $brown-text;
         margin-left: 15px;
+        font-size: 13px;
     }
 
     // ul
@@ -27,6 +28,7 @@
                 text-decoration: none;
                 transition: all 100ms 0s ease;
                 color: $hover-black;
+                font-size: 14px;
             }
 
             // Map
@@ -76,6 +78,10 @@
     @media only screen and (min-width: 940px) {
         .title {
             display: block;
+        }
+
+        .nav-list__text {
+            font-size: 16px !important;
         }
     }
 }

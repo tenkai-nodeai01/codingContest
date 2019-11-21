@@ -24,8 +24,20 @@
         display: inline-block;
         font-weight: 200;
         color: $brown-text;
-        font-size: 22px;
+        font-size: 20px;
         margin: 0;
         vertical-align: text-bottom;
+
+        @media only screen and (min-width: 940px) {
+            & {
+                font-size: 22px;
+            }
+        }
+
+        @media only screen and (min-width: 1280px) {
+            & {
+                font-size: 24px;
+            }
+        }
     }
 }
