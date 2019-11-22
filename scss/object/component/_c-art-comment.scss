@@ -1,8 +1,13 @@
 // 作品ページのcomment要素
 
 .c-art-comment {
-    width: auto;
+    width: calc(100% - 30px);
+    margin: auto;
     padding: 0 0 15px 0;
+
+    @media only screen and (min-width: 940px) {
+        width: auto;
+    }
 
     .comment-wrapper {
         padding: 12px 12px 12px 20px;

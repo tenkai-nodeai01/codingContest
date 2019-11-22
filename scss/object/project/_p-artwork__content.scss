@@ -18,6 +18,10 @@
     .artwork-detail {
         .artwork-detail__title {
             margin: 0 0 0 15px;
+
+            @media only screen and (min-width: 940px) {
+                margin: 0;
+            }
         }
 
         // liの要素
@@ -55,8 +59,19 @@
         // ulの要素
         .artwork-detail {
             width: 60%;
-            padding-top: 30px;
-            margin-right: 46px;
+            padding: 8vw 2vw 0 0;
+        }
+    }
+
+    @media only screen and (min-width: 1280px) {
+        // 本要素
+
+        // 作品画像のimg wrapper
+        .content-image {
+        }
+
+        // ulの要素
+        .artwork-detail {
         }
     }
 }
