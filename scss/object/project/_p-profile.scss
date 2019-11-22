@@ -19,9 +19,14 @@
     // ユーザーの所有画像
     .c-work {
         .c-work__wrapper {
+            position: absolute;
             display: inline-block;
             width: 100%;
             background-color: $vague-white;
+
+            @media only screen and (min-width: 940px) {
+                position: unset;
+            }
 
             .title-wrapper {
                 width: auto;
