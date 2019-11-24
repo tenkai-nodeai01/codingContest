@@ -20,7 +20,7 @@
                 margin-top: -2px;
             }
 
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: $ipad) {
                 font-size: 22px;
                 &:before {
                     height: 26px;
@@ -30,13 +30,13 @@
                 }
             }
 
-            @media only screen and (min-width: 940px) {
+            @media only screen and (min-width: $pc-small) {
                 &:before {
                     left: 4vw;
                 }
             }
 
-            @media only screen and (min-width: 1280px) {
+            @media only screen and (min-width: $pc-big) {
                 &:before {
                     left: 12vw;
                 }
@@ -46,11 +46,11 @@
         padding: 1.5vw 35px 1.5vw 35px;
 
         // 作品ロゴ
-        @media only screen and (min-width: 940px) {
+        @media only screen and (min-width: $pc-small) {
             padding: 1vw calc(7vw + 1px) 0 calc(7vw + 1px);
         }
 
-        @media only screen and (min-width: 1280px) {
+        @media only screen and (min-width: $pc-big) {
             padding: 1vw 14.5vw 0 14.5vw;
         }
     }
@@ -66,7 +66,7 @@
             }
         }
 
-        @media only screen and (min-width: 940px) {
+        @media only screen and (min-width: $pc-small) {
             // 画面サイズ変わった時点、paddingとlogoの位置調整
             background-color: $default-gray;
         }

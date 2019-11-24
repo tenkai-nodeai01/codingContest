@@ -10,7 +10,8 @@ html {
 @import "./foundation/_f-Normalize";
 @import "./foundation/_f-font";
 @import "./foundation/_f-Color";
-@import "./foundation/_f-mixin";
+@import "./foundation/_f-Mixin";
+@import "./foundation/f-Sizes";
 
 // layout
 @import "./layout/_l-basic";

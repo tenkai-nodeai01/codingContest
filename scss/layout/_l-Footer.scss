@@ -2,7 +2,7 @@
     display: block;
     background-color: $default-gray;
     padding-bottom: 15px;
-    @media only screen and (min-width: 940px) {
+    @media only screen and (min-width: $pc-small) {
         & {
             display: none;
         }

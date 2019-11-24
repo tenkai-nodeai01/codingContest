@@ -18,7 +18,7 @@
                 text-decoration: none;
                 color: $hover-black;
                 font-size: 14px;
-                @media only screen and (min-width: 940px) {
+                @media only screen and (min-width: $pc-small) {
                     & {
                         font-size: 16px;
                     }
@@ -154,7 +154,7 @@
         margin: 0;
         height: 45px;
 
-        @media only screen and (min-width: 940px) {
+        @media only screen and (min-width: $pc-small) {
             & {
                 margin: 0 0 2% 0;
             }

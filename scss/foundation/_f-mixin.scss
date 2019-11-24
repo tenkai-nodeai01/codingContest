@@ -25,3 +25,31 @@
     display: flex;
     display: -webkit-flex;
 }
+
+/*
+    矢印アイコン（下向き）
+    引数はmargin-top
+*/
+@mixin arrow-down($margin-top) {
+    content: "";
+    float: right;
+    margin-top: $margin-top;
+    border-top: 6px solid #727262;
+    border-right: 4px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+/*
+    矢印アイコン（上向き）
+    引数はmargin-top
+*/
+@mixin arrow-up($margin-top) {
+    content: "";
+    float: right;
+    margin-top: $margin-top;
+    border-bottom: 6px solid #727262;
+    border-right: 4px solid transparent;
+    border-top: 6px solid transparent;
+    border-left: 4px solid transparent;
+}

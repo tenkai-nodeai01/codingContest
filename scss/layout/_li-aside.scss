@@ -15,7 +15,7 @@
             height: 22px;
             margin: 1%;
 
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: $ipad) {
                 height: 26px;
                 width: 26px;
             }
@@ -29,7 +29,7 @@
             display: inline;
             color: $hover-black;
 
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: $ipad) {
                 font-size: 22px;
             }
         }

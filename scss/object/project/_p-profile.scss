@@ -24,14 +24,14 @@
             width: 100%;
             background-color: $vague-white;
 
-            @media only screen and (min-width: 940px) {
+            @media only screen and (min-width: $pc-small) {
                 position: unset;
             }
 
             .title-wrapper {
                 width: auto;
                 margin: 0 0 0 5%;
-                @media only screen and (min-width: 940px) {
+                @media only screen and (min-width: $pc-small) {
                     & {
                         width: 92%;
                         margin: 2% auto;
@@ -46,7 +46,7 @@
                     margin: 0 15px 0 0;
                     font-size: 14px;
 
-                    @media only screen and (min-width: 940px) {
+                    @media only screen and (min-width: $pc-small) {
                         & {
                             font-size: 16px;
                         }
@@ -70,7 +70,7 @@
                     font-weight: 500;
                     font-size: 14px;
 
-                    @media only screen and (min-width: 940px) {
+                    @media only screen and (min-width: $pc-small) {
                         & {
                             font-size: 16px;
                         }
@@ -103,7 +103,7 @@
     }
 
     // サイズによって、必要な調整はここに書きます
-    @media only screen and (min-width: 940px) {
+    @media only screen and (min-width: $pc-small) {
         .c-profile {
             margin: 0 0 15px 0;
         }

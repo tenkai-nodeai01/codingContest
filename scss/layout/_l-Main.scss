@@ -36,13 +36,13 @@
     }
 
     // 画面サイズが変わった時点で、gridの構成を変更する（カラムかられつに）
-    @media only screen and (min-width: 940px) {
+    @media only screen and (min-width: $pc-small) {
         & {
             padding: 107px 15px 0 15px;
             grid-template-areas:
             'main right';
             grid-gap: 15px;
-            max-width: 1280px;
+            max-width: $pc-big;
             margin: 0 auto;
             margin-bottom: 30px;
             grid-template-columns: 50% 50%;
@@ -50,7 +50,7 @@
     }
 
     // gridのサイズ（カラムの場合）
-    @media only screen and (min-width: 1280px) {
+    @media only screen and (min-width: $pc-big) {
         & {
             grid-template-columns: 40% 60%;
         }

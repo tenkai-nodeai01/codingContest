@@ -21,7 +21,7 @@
                 padding: 2% 3% 2% 3%;
                 font-size: 14px;
 
-                @media only screen and (min-width: 768px) {
+                @media only screen and (min-width: $ipad) {
                     & {
                         font-size: 16px;
                     }
@@ -29,25 +29,13 @@
 
                 // した矢印
                 &:after {
-                    content: "";
-                    float: right;
-                    margin-top: 7px;
-                    border-top: 6px solid #727262;
-                    border-right: 4px solid transparent;
-                    border-bottom: 6px solid transparent;
-                    border-left: 4px solid transparent;
+                    @include arrow-down(7px);
                 }
 
                 // openの場合
                 &.is-opened {
                     &:after {
-                        content: "";
-                        float: right;
-                        margin-top: 2px;
-                        border-bottom: 6px solid #727262;
-                        border-right: 4px solid transparent;
-                        border-top: 6px solid transparent;
-                        border-left: 4px solid transparent;
+                        @include arrow-up(2px);
                     }
                 }
             }
@@ -66,7 +54,7 @@
                 font-size: 14px;
                 font-weight: 500;
 
-                @media only screen and (min-width: 768px) {
+                @media only screen and (min-width: $ipad) {
                     & {
                         font-size: 16px;
                     }

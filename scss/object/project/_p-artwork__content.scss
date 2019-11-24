@@ -19,7 +19,7 @@
         .artwork-detail__title {
             margin: 0 0 0 15px;
 
-            @media only screen and (min-width: 940px) {
+            @media only screen and (min-width: $pc-small) {
                 margin: 0;
             }
         }
@@ -29,18 +29,18 @@
             font-size: 16px;
             color: $brown-text;
             font-weight: 300;
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: $ipad) {
                 font-size: 18px;
             }
         }
     }
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: $ipad) {
         padding: 2% 6%;
     }
 
     // サイズ変わる時点の調整
-    @media only screen and (min-width: 940px) {
+    @media only screen and (min-width: $pc-small) {
         // 本要素
         width: 100%;
         @include display-flex;
@@ -62,7 +62,7 @@
         }
     }
 
-    @media only screen and (min-width: 1280px) {
+    @media only screen and (min-width: $pc-big) {
         // 本要素
 
         // 作品画像のimg wrapper

@@ -24,7 +24,7 @@
     }
 
     // サイズ変わったじてんの調整、表示非表示
-    @media only screen and (min-width: 940px) {
+    @media only screen and (min-width: $pc-small) {
         & {
             display: block;
             width: 140px;

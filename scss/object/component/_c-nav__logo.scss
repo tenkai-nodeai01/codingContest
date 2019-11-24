@@ -12,7 +12,7 @@
     }
 
     // サイズ変わったじてん、表示非表示の調整
-    @media only screen and (min-width: 940px) {
+    @media only screen and (min-width: $pc-small) {
         .c-logo__small {
             display: none;
         }
