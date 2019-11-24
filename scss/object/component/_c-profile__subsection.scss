@@ -127,15 +127,15 @@
                 // アイコンごと異なる要素
                 // hoverのversion（黒い）
                 &.twitter-wrapper:after {
-                    content: url(../assets/img/twitter_icon_h.svg);
+                    content: url(../assets/minify-img/twitter_icon_h.svg);
                 }
 
                 &.instagram-wrapper:after {
-                    content: url(../assets/img/insta_icon_h.svg);
+                    content: url(../assets/minify-img/insta_icon_h.svg);
                 }
 
                 &.facebook-wrapper:after {
-                    content: url(../assets/img/facebook_icon_h.svg);
+                    content: url(../assets/minify-img/facebook_icon_h.svg);
                 }
 
                 &:after {
@@ -165,7 +165,7 @@
             width: 12px;
             height: 100%;
             margin-right: 5px;
-            background: url(../assets/img/fav_icon.svg) 100% 20% no-repeat;
+            background: url(../assets/minify-img/fav_icon.svg) 100% 20% no-repeat;
             float: left;
         }
 

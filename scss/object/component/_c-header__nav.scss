@@ -33,9 +33,9 @@
 
             // Map
             &.c-nav__map {
-                background: url(../assets/img/map_icon.svg) no-repeat;
+                background: url(../assets/minify-img/map_icon.svg) no-repeat;
                 &:hover {
-                    background: url(../assets/img/map_icon_white.svg) no-repeat;
+                    background: url(../assets/minify-img/map_icon_white.svg) no-repeat;
                     a {
                         color: $white;
                     }
@@ -44,9 +44,9 @@
 
             // Search
             &.c-nav__search {
-                background: url(../assets/img/search_icon.svg) no-repeat;
+                background: url(../assets/minify-img/search_icon.svg) no-repeat;
                 &:hover {
-                    background: url(../assets/img/search_icon_white.svg) no-repeat;
+                    background: url(../assets/minify-img/search_icon_white.svg) no-repeat;
                     a {
                         color: $white;
                     }
@@ -55,9 +55,9 @@
 
             // FAQ
             &.c-nav__faq {
-                background: url(../assets/img/q_icon.svg) no-repeat;
+                background: url(../assets/minify-img/q_icon.svg) no-repeat;
                 &:hover {
-                    background: url(../assets/img/q_icon_white.svg) no-repeat;
+                    background: url(../assets/minify-img/q_icon_white.svg) no-repeat;
                     a {
                         color: $white;
                     }
