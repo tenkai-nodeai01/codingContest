@@ -5,7 +5,7 @@ const cleanCss = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
-// const webserver = require('gulp-webserver');
+const webserver = require('gulp-webserver');
 
 const paths = {
   src: {
@@ -19,14 +19,14 @@ const paths = {
   }
 };
 
-/*gulp.task('webserver', function () {
+gulp.task('webserver', function () {
   gulp.src(paths.app.main)
     .pipe(webserver({
       livereload: true,
       directoryListing: true,
-      open: 'index.html'
+      open: 'profile.html'
     }));
-});*/
+});
 
 gulp.task('sass', done => {
   gulp.src(paths.src.scss).pipe(sourcemaps.init()).pipe(sass({
@@ -39,10 +39,12 @@ gulp.task('sass', done => {
   done();
 });
 
-gulp.task('default', () => {
-  gulp.watch(paths.src.scss, gulp.task('sass'));
-})
-
 gulp.task('dev', () => {
-  gulp.watch(paths.src.scss, gulp.task('sass'));
+  gulp.src(paths.app.main)
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: true,
+      open: 'profile.html'
+    }));
+  gulp.watch(paths.src.scss, gulp.task(['sass']));
 });

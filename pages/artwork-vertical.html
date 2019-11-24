@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>Artwork Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="../css/index.min.css" />
+    </head>
+    <body>
+        <div class="l-content">
+            <header class="l-header">
+                <div class="l-header__wrapper">
+                        <!--HeaderのLogo-->
+                        <div class="header-wrapper">
+                            <h1 class="l-header__container">
+                                <a class="c-nav__logo" href="../profile.html" rel="home">
+                                    <img class="c-logo__small" alt="patoro-logo-small" src="../assets/minify-img/logo_s.svg">
+                                    <img class="c-logo__large" alt="patoro-logo-large" src="../assets/minify-img/logo_l.svg">
+                                </a>
+                            </h1>
+                        </div>
+                        <!--Map, search, FAQ の nav-->
+                        <div class="c-header__nav">
+                            <p class="title">アートは未来を照らす光 - 創造力はぼくらの手の中にある</p>
+                            <nav class="c-nav">
+                                <ul class="nav-ul">
+                                    <li class="c-nav__map nav-list">
+                                        <a href="" class="nav-list__text">Map</a>
+                                    </li>
+                                    <li class="c-nav__search nav-list">
+                                        <a href="" class="nav-list__text">Search</a>
+                                    </li>
+                                    <li class="c-nav__faq nav-list">
+                                        <a href="" class="nav-list__text">FAQ</a>
+                                    </li>
+                                    </ul>
+                            </nav>
+                        </div>
+                        <!--Headerのsubmenu (パトロについて、申請、Loginボタン)-->
+                        <div class="c-header__menu">
+                            <div class="c-header__service">
+                                <a class="menu-button header-button-patoro">パトロについて</a>
+                                <a class="menu-button header-button-artist">アーティスト申請</a>
+                            </div>
+                            <a class="c-header__login">LOGIN</a>
+                        </div>
+                </div><!--l-header__wrapperはここまで-->
+            </header>
+            <!--Main contentの wrapper-->
+            <div class="l-artwork__wrapper">
+                <!--作品の詳細（本画像、詳細）-->
+                <section class="p-artwork__content">
+                    <div class="content-image">
+                        <img src="../assets/minify-img/iStock-882190540-vertical.jpg" class="image-element" alt="Benjavisa《 夜の散歩 》">
+                    </div>
+                    <!--作品詳細のwrapper-->
+                    <div class="artwork-detail">
+                        <div class="artwork-detail__title">
+                            <h2 class="title-detail">Benjavisa 《 夜の散歩 》 2017年</h2>
+                        </div>
+                        <div class="artwork-detail__subdetail">
+                            <div class="c-art-subdetail">
+                                <!--作品詳細情報のリスト-->
+                                <ul class="c-art-subdetail__list">
+                                    <li class="subdetail-list__child">
+                                        <a href="" class="list-text">Benjavisa</a>
+                                    </li>
+                                    <li class="subdetail-list__child">
+                                        <a href="" class="list-text">油彩 カンバス</a>
+                                    </li>
+                                    <li class="subdetail-list__child">60 × 48 cm</li>
+                                    <li class="subdetail-list__child">
+                                        <a href="" class="list-text">0.5 kg</a>
+                                    </li>
+                                    <li class="subdetail-list__child">
+                                        <a href="" class="list-text">2017年</a>
+                                    </li>
+                                </ul>
+                                <!--作品 tag の list-->
+                                <ul class="c-art-description">
+                                    <li class="description-term"><a class="description-term__text" href="">猫</a></li>
+                                    <li class="description-term"><a class="description-term__text" href="">１点</a></li>
+                                    <li class="description-term"><a class="description-term__text" href="">額装なし</a></li>
+                                    <li class="description-term"><a class="description-term__text" href="">状態良好</a></li>
+                                </ul>
+                                <div class="c-favorite-wrapper">
+                                    <!-- fav iconは a要素につける（背景）-->
+                                    <a class="favorite-icon"></a>
+                                    <p><a class="favourite-count" href="">15 お気に入り</a></p>
+                                </div>
+                                <div class="c-art-comment">
+                                    <div class="comment-wrapper">
+                                        <!--コメント追加されたら簡単にtext書き換えることができる-->
+                                        <a class="comment-wrapper__count">10コメント</a>
+                                        <i class="comment-wrapper__icon"></i>
+                                        <div class="comment-wrapper__content">
+                                            <p>コメントはここに書いてあります</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--c-art-subdetail-->
+                        </div><!--artwork-detail__subdetail-->
+                    </div><!--artwork-detail-->
+                </section>
+                <!--作品ログ-->
+                <section class="p-artwork__log">
+                    <div class="p-header-wrapper">
+                        <!--layoutingのため-->
+                        <h3 class="p-log-header">作品ログ</h3>
+                    </div>
+                    <div class="p-log-content">
+                        <ol class="c-log-list">
+                            <!--年順に並べます-->
+                            <li class="year-list">
+                                    <div class="c-log-year">
+                                        <time datetime="2020">2020年</time>
+                                    </div>
+                                    <!--年ごとの詳細情報-->
+                                    <div class="c-log-info">
+                                        <p class="info-content">購入</p>
+                                        <a class="info-content linked-content" href="">やまむら</a>
+                                    </div>
+                                </li>
+                            <li class="year-list">
+                                <div class="c-log-year">
+                                    <time datetime="2019">2019年</time>
+                                </div>
+                                <!--年ごとの詳細情報-->
+                                <div class="c-log-info">
+                                    <p class="info-content">購入</p>
+                                    <p class="info-content">パトロ匿名</p>
+                                </div>
+                                </li>
+                            <li class="year-list">
+                                <div class="c-log-year">
+                                    <time datetime="2018">2018年</time>
+                                </div>
+                                <!--年ごとの詳細情報-->
+                                <div class="c-log-info">
+                                    <p class="info-content">発表</p>
+                                    <a class="info-content linked-content" href="">ギャラリー小山</a>
+                                    <a class="info-content linked-content" href="">「Benjavisa個展 夜の気配」</a>
+                                </div>
+                            </li>
+                            <li class="year-list">
+                                <div class="c-log-year">
+                                    <time datetime="2017">2017年~</time>
+                                    <time datetime="2018">2018年</time>
+                                </div>
+                                <!--年ごとの詳細情報-->
+                                <div class="c-log-info">
+                                    <p class="info-content">制作</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div><!--p-log-content-->
+                </section>
+            </div>
+            <!--footerの要素-->
+            <footer class="l-footer-wrapper block-3">
+                <div class="c-footer">
+                    <!--footerのtitle-->
+                    <p class="c-footer__title">創造力はぼくらの手の中にある</p>
+                    <a href="../profile.html">
+                        <div class="c-footer__logo">
+                            <!--footerのlogo-->
+                            <img class="c-logo__large" alt="patoro-logo-large" src="../assets/minify-img/logo_l.svg">
+                        </div>
+                    </a>
+                    <div class="c-footer__submenu">
+                        <div class="submenu-wrapper">
+                            <!--footerのsubmenu-->
+                            <a class="submenu-patoro" href="profile.html">パトロについて</a>
+                            <a class="submenu-artist" href="profile.html">アーティスト申請</a>
+                        </div>
+                    </div>
+                </div><!--c-footer-->
+            </footer>
+        </div>
+        <script src="../js/artwork.js"></script>
+    </body>
+</html>
