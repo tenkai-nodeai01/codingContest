@@ -19,8 +19,7 @@
     // ユーザーの所有画像
     .c-work {
         .c-work__wrapper {
-            position: absolute;
-            display: inline-block;
+            display: grid;
             width: 100%;
             background-color: $vague-white;
 
