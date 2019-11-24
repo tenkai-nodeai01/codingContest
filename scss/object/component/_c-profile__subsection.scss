@@ -151,8 +151,6 @@
     // userに紐づいてる要素
     .user-description {
         padding: 0;
-        margin: 0;
-        height: 45px;
 
         @media only screen and (min-width: $pc-small) {
             & {
@@ -172,6 +170,17 @@
         .user-description__list {
             display: inline-block;
             margin-right: 3%;
+
+            &.first-list:before {
+                content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                margin-left: -2px;
+                background: url(../assets/minify-img/fav_icon.svg) 100% 20% no-repeat;
+            }
+
+
             .description-keyword {
                 text-decoration: none;
                 font-size: 14px;

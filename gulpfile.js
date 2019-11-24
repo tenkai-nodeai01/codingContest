@@ -40,11 +40,11 @@ gulp.task('sass', done => {
 });
 
 gulp.task('dev', () => {
-  gulp.src(paths.app.main)
+  /*gulp.src(paths.app.main)
     .pipe(webserver({
       livereload: true,
       directoryListing: true,
       open: 'profile.html'
-    }));
+    }));*/
   gulp.watch(paths.src.scss, gulp.task(['sass']));
 });
