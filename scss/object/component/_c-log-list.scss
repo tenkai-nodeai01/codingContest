@@ -11,8 +11,7 @@
 
     // li の要素
     .year-list {
-        display: flex;
-        display: -webkit-flex;
+        @include display-flex;
         margin: 0 0 12px 0;
         color: $brown-text;
 
@@ -36,8 +35,7 @@
             background-color: $hover-yellow;
             text-decoration: none;
             &:hover {
-                color: $white;
-                background-color: $hover-black;
+                @include hover-white-black;
             }
         }
 

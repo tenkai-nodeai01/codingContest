@@ -43,8 +43,7 @@
     @media only screen and (min-width: 940px) {
         // 本要素
         width: 100%;
-        display: flex;
-        display: -webkit-flex;
+        @include display-flex;
         padding: 0;
 
         // 作品画像のimg wrapper

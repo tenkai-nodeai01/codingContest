@@ -1,0 +1,27 @@
+// hover, カラーのcombination
+
+@mixin hover-black-white {
+    background-color: $hover-black;
+    color: $white;
+}
+
+@mixin hover-white-black {
+    color: $hover-black;
+    background-color: $white;
+}
+
+@mixin hover-white-brown {
+    background-color: $white;
+    color: $patoro-brown;
+}
+
+@mixin hover-brown-white {
+    color: $white;
+    background-color: $patoro-brown;
+}
+
+// flexのmixin
+@mixin display-flex {
+    display: flex;
+    display: -webkit-flex;
+}

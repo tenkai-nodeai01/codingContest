@@ -4,10 +4,9 @@
     padding: 0 5% 0%;
     // ul
     .user-keyword {
+        @include display-flex;
         list-style: none;
         padding: 0;
-        display: flex;
-        display: -webkit-flex;
         // li
         .user-keyword__list {
             padding: 2px;
@@ -37,8 +36,7 @@
 
     // フォロ・フォロワー
     .follow-section-wrapper {
-        display: flex;
-        display: -webkit-flex;
+        @include display-flex;
         justify-content: space-between;
         -webkit-box-pack: justify;
         .follow-section {
@@ -70,8 +68,7 @@
                 font-weight: 200;
             }
             &:hover {
-                color: $white;
-                background-color: $patoro-brown;
+                @include hover-brown-white;
                 cursor: pointer;
                 .follow-button__text {
                     color: $white;
@@ -85,8 +82,7 @@
                     color: $white;
                 }
                 &:hover {
-                    color: $patoro-brown;
-                    background-color: $white;
+                    @include hover-brown-white;
                     .follow-button__text {
                         color: $patoro-brown;
                     }
@@ -116,8 +112,7 @@
     .sns-icon-wrapper {
         list-style: none;
         padding: 0;
-        display: flex;
-        display: -webkit-flex;
+        @include display-flex;
         .icon-list {
             display: inline-block;
             margin: 0 5% 0 0;

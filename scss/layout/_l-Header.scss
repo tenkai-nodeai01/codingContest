@@ -1,10 +1,9 @@
 // headerのmain wrapper
 
 .l-header {
+    @include display-flex;
     width: 100%;
     height: 44px;
-    display: flex;
-    display: -webkit-flex;
     justify-content: space-between;
     position: fixed;
     background-color: $default-gray;
@@ -12,8 +11,7 @@
 
     // ここはlogoのwrapper
     .l-header__wrapper {
-        display: flex;
-        display: -webkit-flex;
+        @include display-flex;
         width: 100%;
         margin: 0 auto;
     }

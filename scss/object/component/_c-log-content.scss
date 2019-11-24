@@ -134,10 +134,9 @@
             }
 
             &.img-as-background {
+                @include display-flex;
                 height: 30vw;
                 max-height: 220px;
-                display: flex;
-                display: -webkit-flex;
                 .crop-img {
                     width: 100%;
                     object-fit: cover;
