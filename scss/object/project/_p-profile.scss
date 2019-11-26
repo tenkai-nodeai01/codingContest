@@ -3,7 +3,7 @@
 
     // userのprofile section
     .c-profile {
-        background: $vague-white;
+        background: $background-white;
         display: inline-block;
         width: 100%;
         .c-profile__background {
@@ -21,7 +21,7 @@
         .c-work__wrapper {
             display: grid;
             width: 100%;
-            background-color: $vague-white;
+            background-color: $background-white;
 
             @media only screen and (min-width: $pc-small) {
                 position: unset;
@@ -41,7 +41,7 @@
                 .c-work__title {
                     display: inline-block;
                     // font-weight: 500;
-                    color: $brown-text;
+                    color: $text-color;
                     margin: 0 15px 0 0;
                     font-size: 14px;
 
@@ -65,7 +65,7 @@
                 .title-favorite {
                     display: inline-block;
                     margin: 0;
-                    color: $patoro-brown;
+                    color: $link-color;
                     // font-weight: 500;
                     font-size: 14px;
 
@@ -76,7 +76,7 @@
                     }
 
                     &:hover {
-                        color: $hover-black;
+                        color: $colored-link;
                         cursor: pointer;
                     }
                 }

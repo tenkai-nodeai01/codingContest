@@ -13,7 +13,7 @@
     .year-list {
         @include display-flex;
         margin: 0 0 12px 0;
-        color: $brown-text;
+        color: $text-color;
 
         &:last-child {
             margin: 0;
@@ -32,7 +32,7 @@
 
         .linked-content {
             padding: 3px;
-            background-color: $hover-yellow;
+            background-color: $link-yellow;
             text-decoration: none;
             &:hover {
                 @include hover-white-black;
@@ -44,7 +44,7 @@
             width: 1px;
             height: 100%;
             position: absolute;
-            background: $brown-text;
+            background: $text-color;
             display: inline-block;
             margin-left: -5px;
         }
@@ -54,13 +54,13 @@
     @media only screen and (min-width: $pc-small) {
         .year-list {
             margin: 0;
-            background-color: $vague-white;
+            background-color: $background-white;
         }
         .c-log-year {
             padding: 12px 15px;
             width: 200px;
             text-align: right;
-            background-color: $less-brown;
+            background-color: $background-vague-gray;
         }
         .c-log-info {
             padding: 12px 15px;

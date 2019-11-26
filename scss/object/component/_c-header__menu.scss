@@ -7,11 +7,11 @@
     .c-header__login {
         padding: 0 15px;
         line-height: 44px;
-        background-color: $white;
-        color: $hover-black;
+        background-color: $highlight;
+        color: $colored-link;
         font-size: 14px;
         &:hover {
-            background-color: $hover-yellow;
+            background-color: $link-yellow;
             cursor: pointer;
         }
         @media only screen and (min-width: $pc-small) {

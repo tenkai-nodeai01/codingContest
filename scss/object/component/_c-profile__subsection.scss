@@ -10,13 +10,13 @@
         // li
         .user-keyword__list {
             padding: 2px;
-            background: $hover-yellow;
+            background: $link-yellow;
             margin: 0 2% 0 0;
 
             // li中の a 要素
             .list-word {
                 text-decoration: none;
-                color: $hover-black;
+                color: $colored-link;
                 font-size: 14px;
                 @media only screen and (min-width: $pc-small) {
                     & {
@@ -26,9 +26,9 @@
             }
 
             &:hover {
-                background-color: $hover-black;
+                background-color: $colored-link;
                 .list-word {
-                    color: $white;
+                    color: $highlight;
                 }
             }
         }
@@ -58,12 +58,12 @@
         }
 
         .follow-button {
-            color: $patoro-brown;
+            color: $link-color;
             padding: 1%;
             border: solid 2px;
             min-width: 7vw;
             .follow-button__text {
-                color: $patoro-brown;
+                color: $link-color;
                 text-decoration: none;
                 // font-weight: 200;
             }
@@ -71,20 +71,20 @@
                 @include hover-brown-white;
                 cursor: pointer;
                 .follow-button__text {
-                    color: $white;
+                    color: $highlight;
                 }
             }
 
             // 押された場合
             &.is-active {
-                background-color: $patoro-brown;
+                background-color: $link-color;
                 .follow-button__text {
-                    color: $white;
+                    color: $highlight;
                 }
                 &:hover {
                     @include hover-brown-white;
                     .follow-button__text {
-                        color: $patoro-brown;
+                        color: $link-color;
                     }
                 }
             }
@@ -96,14 +96,14 @@
         font-size: 14px;
         .comment-text {
             margin-bottom: 0;
-            color: $brown-text;
+            color: $text-color;
         }
         .bio-link {
-            color: $patoro-brown;
+            color: $link-color;
             text-decoration: none;
             // font-weight: 300;
             &:hover {
-                color: $hover-black;
+                color: $colored-link;
             }
         }
     }
@@ -184,10 +184,10 @@
             .description-keyword {
                 text-decoration: none;
                 font-size: 14px;
-                color: $patoro-brown;
+                color: $link-color;
                 font-weight: 200;
                 &:hover {
-                    color: $hover-black;
+                    color: $colored-link;
                 }
             }
         }

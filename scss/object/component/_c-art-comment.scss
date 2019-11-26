@@ -11,7 +11,7 @@
 
     .comment-wrapper {
         padding: 12px 12px 12px 20px;
-        background-color: $less-brown;
+        background-color: $background-vague-gray;
 
         .comment-wrapper__content {
             width: 100%;
@@ -20,7 +20,7 @@
         }
 
         &:hover {
-            background-color: $white;
+            background-color: $highlight;
             cursor: pointer;
         }
 

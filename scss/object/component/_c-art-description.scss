@@ -13,19 +13,19 @@
     .description-term {
         padding: 2px 5px;
         float: left;
-        background-color: $patoro-brown;
+        background-color: $link-color;
         margin-left: 3px;
         min-width: 30px;
         text-align: center;
 
         .description-term__text {
             text-decoration: none;
-            color: $white;
+            color: $highlight;
             // font-weight: 200;
         }
 
         &:hover {
-            background-color: $hover-black;
+            background-color: $colored-link;
         }
     }
 }

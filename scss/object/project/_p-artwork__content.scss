@@ -1,7 +1,7 @@
 // 作品ページの詳細要素
 
 .p-artwork__content {
-    background-color: $vague-white;
+    background-color: $background-white;
     padding: 0 1%;
 
     // 作品の画像
@@ -27,7 +27,7 @@
         // liの要素
         .title-detail {
             font-size: 16px;
-            color: $brown-text;
+            color: $text-color;
             // font-weight: 300;
             @media only screen and (min-width: $ipad) {
                 font-size: 18px;

@@ -6,18 +6,18 @@
         padding: unset;
         // li ごとのスタイリング
         .log-list__el {
-            background-color: $less-brown;
+            background-color: $background-vague-gray;
             margin: 0 0 1% 0;
 
             &:hover {
-                background-color: $vague-white;
+                background-color: $background-white;
             }
 
             // headerの日付
             .log-list__header {
                 margin: 0;
                 // font-weight: 300;
-                color: $hover-black;
+                color: $colored-link;
                 padding: 2% 3% 2% 3%;
                 font-size: 14px;
 
@@ -50,7 +50,7 @@
             .log-list-head {
                 padding: 0 2% 2% 3%;
                 margin: 0;
-                color: $patoro-brown;
+                color: $link-color;
                 font-size: 14px;
                 // font-weight: 500;
 

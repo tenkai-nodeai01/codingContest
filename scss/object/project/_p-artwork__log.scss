@@ -3,7 +3,7 @@
 .p-artwork__log {
     .p-header-wrapper {
         .p-log-header {
-            color: $hover-black;
+            color: $colored-link;
             margin: unset;
             // font-weight: 500;
             font-size: 14px;
@@ -57,7 +57,7 @@
 
     // ログ情報のwrapper要素
     .p-log-content {
-        background-color: $vague-white;
+        background-color: $background-white;
 
         @media only screen and (max-width: 440px) {
             // 画面サイズが変わった時点
@@ -68,7 +68,7 @@
 
         @media only screen and (min-width: $pc-small) {
             // 画面サイズ変わった時点、paddingとlogoの位置調整
-            background-color: $default-gray;
+            background-color: $background-gray;
         }
     }
 }

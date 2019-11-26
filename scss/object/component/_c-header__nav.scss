@@ -6,7 +6,7 @@
     // headerのtitle
     .title {
         display: none;
-        color: $brown-text;
+        color: $text-color;
         margin-left: 15px;
         font-size: 13px;
     }
@@ -27,7 +27,7 @@
                 margin: 0 0 0 20px;
                 text-decoration: none;
                 transition: all 100ms 0s ease;
-                color: $hover-black;
+                color: $colored-link;
                 font-size: 14px;
             }
 
@@ -37,7 +37,7 @@
                 &:hover {
                     background: url(../assets/minify-img/map_icon_white.svg) no-repeat;
                     a {
-                        color: $white;
+                        color: $highlight;
                     }
                 }
             }
@@ -48,7 +48,7 @@
                 &:hover {
                     background: url(../assets/minify-img/search_icon_white.svg) no-repeat;
                     a {
-                        color: $white;
+                        color: $highlight;
                     }
                 }
             }
@@ -59,7 +59,7 @@
                 &:hover {
                     background: url(../assets/minify-img/q_icon_white.svg) no-repeat;
                     a {
-                        color: $white;
+                        color: $highlight;
                     }
                 }
             }

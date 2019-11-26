@@ -7,8 +7,7 @@
     // hover
     .footer-button-patoro,
     .header-button-patoro {
-        background-color: $white;
-        color: $patoro-brown;
+        @include hover-white-brown;
         &:hover {
             @include hover-brown-white;
         }
@@ -16,8 +15,7 @@
 
     .footer-button-artist,
     .header-button-artist {
-        background-color: $patoro-brown;
-        color: $white;
+        @include hover-brown-white;
         &:hover {
             @include hover-black-white;
         }

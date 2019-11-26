@@ -19,9 +19,9 @@
 
     .favourite-count {
         text-decoration: none;
-        color: $patoro-brown;
+        color: $link-color;
         &:hover {
-            color: $hover-black;
+            color: $colored-link;
         }
     }
 }

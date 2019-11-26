@@ -13,13 +13,13 @@
 
         .subdetail-list__child {
             margin-bottom: 5px;
-            color: $brown-text;
+            color: $text-color;
             // font-weight: 300;
             .list-text {
-                color: $patoro-brown;
+                color: $link-color;
                 text-decoration: none;
                 &:hover {
-                    color: $hover-black;
+                    color: $colored-link;
                 }
             }
         }

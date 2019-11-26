@@ -1,6 +1,6 @@
 .l-footer-wrapper {
     display: block;
-    background-color: $default-gray;
+    background-color: $background-gray;
     padding-bottom: 15px;
     @media only screen and (min-width: $pc-small) {
         & {
@@ -18,7 +18,7 @@
         .c-footer__title {
             font-size: 13px;
             margin-top: unset;
-            color: $brown-text;
+            color: $text-color;
             // font-weight: 500;
         }
 
@@ -38,8 +38,7 @@
 
                 // パトロについてのボタン
                 .submenu-patoro {
-                    color: $patoro-brown;
-                    background-color: $white;
+                    @include hover-white-brown;
                     text-decoration: none;
                     padding: 3px 5px;
                     margin-right: 5px;
@@ -51,8 +50,7 @@
 
                 // アーティストの申請のボタン
                 .submenu-artist {
-                    background-color: $patoro-brown;
-                    color: $white;
+                    @include hover-brown-white;
                     text-decoration: none;
                     padding: 2px 5px;
                     &:hover {
