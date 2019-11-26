@@ -16,7 +16,7 @@
             // headerの日付
             .log-list__header {
                 margin: 0;
-                font-weight: 300;
+                // font-weight: 300;
                 color: $hover-black;
                 padding: 2% 3% 2% 3%;
                 font-size: 14px;
@@ -52,7 +52,7 @@
                 margin: 0;
                 color: $patoro-brown;
                 font-size: 14px;
-                font-weight: 500;
+                // font-weight: 500;
 
                 @media only screen and (min-width: $ipad) {
                     & {

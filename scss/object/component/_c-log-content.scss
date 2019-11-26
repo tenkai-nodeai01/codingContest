@@ -42,7 +42,7 @@
             }
             .log-title__head {
                 display: inline;
-                font-weight: 500;
+                // font-weight: 500;
                 font-size: 14px;
                 &:hover {
                     color: $hover-black;
@@ -56,7 +56,7 @@
             .log-subdetail__location {
                 color: $hover-black;
                 font-size: 14px;
-                font-weight: 300;
+                // font-weight: 300;
                 &:hover {
                     text-decoration: none;
                 }
@@ -78,7 +78,7 @@
                     display: inline-block;
                     min-width: 35px;
                     text-align: center;
-                    font-weight: 500;
+                    // font-weight: 500;
                     .tag-detail-text {
                         text-decoration: none;
                         color: $white;
@@ -102,7 +102,7 @@
             margin: 1% 0 0 0;
             font-size: 14px;
             color: $brown-text;
-            font-weight: 300;
+            // font-weight: 300;
             @media only screen and (min-width: $ipad) {
                 & {
                     font-size: 16px;

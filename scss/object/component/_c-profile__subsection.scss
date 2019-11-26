@@ -47,7 +47,7 @@
             .follow-section-list {
                 display: inline;
                 margin-right: 15px;
-                font-weight: 200;
+                // font-weight: 200;
                 .follow-section-list__title {
                     display: inherit;
                 }
@@ -65,7 +65,7 @@
             .follow-button__text {
                 color: $patoro-brown;
                 text-decoration: none;
-                font-weight: 200;
+                // font-weight: 200;
             }
             &:hover {
                 @include hover-brown-white;
@@ -101,7 +101,7 @@
         .bio-link {
             color: $patoro-brown;
             text-decoration: none;
-            font-weight: 300;
+            // font-weight: 300;
             &:hover {
                 color: $hover-black;
             }
