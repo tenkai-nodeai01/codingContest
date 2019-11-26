@@ -25,7 +25,7 @@
 
                 // した矢印
                 &:after {
-                    @include arrow-down(7px);
+                    @include arrow-down(10px);
                 }
 
                 // openの場合
