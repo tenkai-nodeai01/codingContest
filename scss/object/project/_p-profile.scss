@@ -90,6 +90,12 @@
             overflow-x: scroll;
             padding: 0;
             margin-left: calc(5% - 4px);
+
+            // scrollbar hide
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
             .own-img__list {
                 list-style: none;
                 margin-right: 2px;
@@ -112,6 +118,7 @@
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
                 width: 92%;
+                overflow: hidden;
 
                 .own-img__list {
                     width: calc(50% - 5px);
