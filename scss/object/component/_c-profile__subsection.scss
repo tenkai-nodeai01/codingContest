@@ -82,7 +82,7 @@
                     color: $highlight;
                 }
                 &:hover {
-                    @include hover-brown-white;
+                    @include hover-white-brown;
                     .follow-button__text {
                         color: $link-color;
                     }
