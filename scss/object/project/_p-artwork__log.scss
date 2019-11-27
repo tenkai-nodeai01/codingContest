@@ -5,8 +5,8 @@
         .p-log-header {
             color: $colored-link;
             margin: unset;
-            // font-weight: 500;
             font-size: 14px;
+            @include fontMedium;
 
             // 作品ログのheader icon
             &:before {

@@ -24,10 +24,10 @@
         // inspirationのtext
         .header-text {
             font-size: 14px;
-            // font-weight: 500;
             margin: 3px 0 0 0;
             display: inline;
             color: $colored-link;
+            @include fontBold;
 
             @media only screen and (min-width: $ipad) {
                 font-size: 22px;

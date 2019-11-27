@@ -19,7 +19,7 @@
             font-size: 13px;
             margin-top: unset;
             color: $text-color;
-            // font-weight: 500;
+            @include fontMedium;
         }
 
         // logo

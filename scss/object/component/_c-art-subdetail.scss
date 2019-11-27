@@ -14,7 +14,8 @@
         .subdetail-list__child {
             margin-bottom: 5px;
             color: $text-color;
-            // font-weight: 300;
+            @include fontRegular;
+
             .list-text {
                 color: $link-color;
                 text-decoration: none;

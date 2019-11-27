@@ -40,9 +40,9 @@
 
                 .c-work__title {
                     display: inline-block;
-                    // font-weight: 500;
                     color: $text-color;
                     margin: 0 15px 0 0;
+                    @include fontMedium;
                     font-size: 14px;
 
                     @media only screen and (min-width: $pc-small) {
@@ -66,8 +66,8 @@
                     display: inline-block;
                     margin: 0;
                     color: $link-color;
-                    // font-weight: 500;
                     font-size: 14px;
+                    @include fontMedium;
 
                     @media only screen and (min-width: $pc-small) {
                         & {

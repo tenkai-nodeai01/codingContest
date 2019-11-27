@@ -22,11 +22,11 @@
     // profile user name
     .profile-name {
         display: inline-block;
-        // font-weight: 200;
         color: $text-color;
         font-size: 20px;
         margin: 0;
         vertical-align: text-bottom;
+        @include fontRegular;
 
         @media only screen and (min-width: $pc-small) {
             & {

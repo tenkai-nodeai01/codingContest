@@ -53,3 +53,22 @@
     border-top: 6px solid transparent;
     border-left: 4px solid transparent;
 }
+
+// フォントの指定
+@mixin fontRegular {
+    font-family: 'Noto Sans Japanese Regular';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin fontMedium {
+    font-family: 'Noto Sans Japanese Medium';
+    font-style: normal;
+    font-weight: 500;
+}
+
+@mixin fontBold {
+    font-family: 'Noto Sans Japanese Bold';
+    font-style: normal;
+    font-weight: 700;
+}
