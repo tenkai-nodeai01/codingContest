@@ -18,11 +18,23 @@
     }
 
     .favourite-count {
-        text-decoration: none;
-        color: $link-color;
-        font-size: 12px;
         &:hover {
-            color: $colored-link;
+            .link-text {
+                color: $colored-link;
+            }
+        }
+        .link-text {
+            text-decoration: none;
+            color: $link-color;
+            @include fontMedium;
+        }
+
+        .favourite-count__number {
+            font-size: 14px;
+        }
+
+        .favourite-count__label {
+            font-size: 12px;
         }
     }
 }

@@ -21,7 +21,7 @@
         .description-term__text {
             text-decoration: none;
             color: $highlight;
-            @include fontRegular;
+            @include fontMedium;
         }
 
         &:hover {

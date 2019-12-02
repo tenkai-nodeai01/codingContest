@@ -6,7 +6,7 @@
             color: $colored-link;
             margin: unset;
             font-size: 14px;
-            @include fontMedium;
+            @include fontBold;
 
             // 作品ログのheader icon
             &:before {
@@ -43,7 +43,7 @@
             }
         }
 
-        padding: 1.5vw 35px 1.5vw 35px;
+        padding: 1.6vw 35px 1.6vw 35px;
 
         // 作品ロゴ
         @media only screen and (min-width: $pc-small) {

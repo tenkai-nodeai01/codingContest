@@ -14,7 +14,11 @@
         .subdetail-list__child {
             margin-bottom: 5px;
             color: $text-color;
-            @include fontRegular;
+            @include fontMedium;
+
+            &.art-size {
+                @include fontRegular;
+            }
 
             .list-text {
                 color: $link-color;
