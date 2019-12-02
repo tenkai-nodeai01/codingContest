@@ -1,4 +1,13 @@
 window.onload = function () {
+  /* let cancelLink = function () {
+    let aElement = document.getElementsByTagName('a')
+    for (let x = 0; x < aElement.length; x++) {
+      aElement[x].addEventListener('click', function (event) {
+        event.preventDefault()
+      })
+    }
+  } */
+
   let favButtonFunction = function () {
     let favIcon = this.document.getElementsByClassName('favorite-icon')[0]
 
@@ -24,6 +33,7 @@ window.onload = function () {
   }
 
   // fav button event listener
+  // cancelLink()
   favButtonFunction()
   commentButtonFunction()
 }

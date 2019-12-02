@@ -1,4 +1,13 @@
 window.onload = function () {
+  /* let cancelLink = function () {
+    let aElement = document.getElementsByTagName('a')
+    for (let x = 0; x < aElement.length; x++) {
+      aElement[x].addEventListener('click', function (event) {
+        event.preventDefault()
+      })
+    }
+  } */
+
   // aside section event listener
   let asideShowEventListener = function () {
     let headerEl = document.getElementsByClassName('log-list__header')
@@ -75,13 +84,14 @@ window.onload = function () {
       locationText[x].addEventListener('click', function (event) {
         event.preventDefault()
 
-        const urlQuery = locationText[x].innerText.replace(' ', '+').replace(' ', '+').replace('　', '+').replace ('_', '+')
+        const urlQuery = locationText[x].innerText.replace(' ', '+').replace(' ', '+').replace('　', '+').replace('_', '+')
 
         window.open('http://map.google.com/?q=' + urlQuery, '_blank')
       })
     }
   }
 
+  // cancelLink()
   followButton()
   asideShowEventListener()
   snsLink()
