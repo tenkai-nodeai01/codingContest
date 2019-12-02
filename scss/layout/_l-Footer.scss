@@ -19,7 +19,7 @@
             font-size: 13px;
             margin-top: unset;
             color: $text-color;
-            @include fontMedium;
+            @include fontBold;
         }
 
         // logo
@@ -43,6 +43,7 @@
                     padding: 3px 5px;
                     margin-right: 5px;
                     font-size: 13px;
+                    @include fontBold;
                     &:hover {
                         @include hover-brown-white;
                     }
@@ -53,6 +54,8 @@
                     @include hover-brown-white;
                     text-decoration: none;
                     padding: 2px 5px;
+                    font-size: 13px;
+                    @include fontBold;
                     &:hover {
                         @include hover-black-white;
                     }

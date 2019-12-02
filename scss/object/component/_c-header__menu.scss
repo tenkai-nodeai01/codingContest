@@ -10,6 +10,7 @@
         background-color: $highlight;
         color: $colored-link;
         font-size: 14px;
+        @include fontMedium;
         &:hover {
             background-color: $link-yellow;
             cursor: pointer;

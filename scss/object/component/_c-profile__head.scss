@@ -5,11 +5,20 @@
     display: inline-block;
     width: auto;
     height: auto;
-    margin: -50px 0 0 0;
+    margin: -45px 0 0 0;
+    @media only screen and (min-width: $ipad) {
+        & { margin: -55px 0 0 0;}
+    }
+
     .c-profile__thumbnail {
-        height: 88px;
-        width: 88px;
+        height: 78px;
+        width: 78px;
         display: inline-block;
+        @media only screen and (min-width: $ipad) {
+            & {height: 88px;
+            width: 88px;}
+        }
+
         .thumbnail-icon {
             width: 100%;
             border: #FFFFFF 2px solid;

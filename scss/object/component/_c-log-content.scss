@@ -8,7 +8,7 @@
 
     // li
     .c-log-content__list {
-        padding: 2% 3%;
+        padding: 2% 4%;
         margin-bottom: 2px;
         background-color: $background-white;
         min-height: 10vw;
@@ -25,7 +25,7 @@
                 .log-title__count {
                     cursor: pointer;
                     margin: 0 15px 0 0;
-                    font-style: normal;
+                    @include fontBold;
                     &:after {
                         content: "";
                         width: 1px;
@@ -59,7 +59,7 @@
             .log-subdetail__location {
                 color: $colored-link;
                 font-size: 14px;
-                @include fontRegular;
+                @include fontMedium;
 
                 &:hover {
                     text-decoration: none;
@@ -107,7 +107,7 @@
             margin: 1% 0 0 0;
             font-size: 14px;
             color: $text-color;
-            @include fontBold;
+            @include fontRegular;
 
             @media only screen and (min-width: $ipad) {
                 & {
@@ -118,6 +118,7 @@
 
         // 日付
         .time-label {
+            @include fontRegular;
             margin: 0;
             text-align: right;
             font-size: 12px;
@@ -141,8 +142,12 @@
 
             &.img-as-background {
                 @include display-flex;
-                height: 30vw;
-                max-height: 220px;
+                height: 23vw;
+
+                @media only screen and (min-width: $ipad) {
+                    height: 15vw;
+                }
+
                 .crop-img {
                     width: 100%;
                     object-fit: cover;

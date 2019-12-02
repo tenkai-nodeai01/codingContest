@@ -29,6 +29,7 @@
                 transition: all 100ms 0s ease;
                 color: $colored-link;
                 font-size: 14px;
+                @include fontMedium;
             }
 
             // Map

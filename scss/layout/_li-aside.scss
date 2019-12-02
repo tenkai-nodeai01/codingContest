@@ -1,7 +1,7 @@
 // asideの要素
 
 .l-aside-wrapper {
-    padding: 10px 2% 10px 0;
+    padding: 10px 2% 10px 2%;
     width: auto;
 
     // インスピレーションログ
@@ -25,8 +25,9 @@
         .header-text {
             font-size: 14px;
             margin: 3px 0 0 0;
-            display: inline;
+            display: inline-block;
             color: $colored-link;
+            margin: 1vw 0 0 0;
             @include fontBold;
 
             @media only screen and (min-width: $ipad) {

@@ -18,6 +18,7 @@
                 text-decoration: none;
                 color: $colored-link;
                 font-size: 14px;
+                @include fontMedium;
                 @media only screen and (min-width: $pc-small) {
                     & {
                         font-size: 16px;
@@ -95,6 +96,7 @@
     // userのbiodata
     .bio-comment-wrapper {
         font-size: 14px;
+        @include fontMedium;
         .comment-text {
             margin-bottom: 0;
             color: $text-color;
@@ -187,7 +189,7 @@
                 text-decoration: none;
                 font-size: 14px;
                 color: $link-color;
-                @include fontRegular;
+                @include fontMedium;
                 &:hover {
                     color: $colored-link;
                 }
