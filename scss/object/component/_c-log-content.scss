@@ -26,6 +26,7 @@
                     cursor: pointer;
                     margin: 0 15px 0 0;
                     @include fontBold;
+
                     &:after {
                         content: "";
                         width: 1px;
@@ -34,6 +35,15 @@
                         position: absolute;
                         margin: 3px 0 0 10px;
                     }
+
+                    @media only screen and (min-width: $ipad) {
+                        font-size: 18px;
+
+                        &:after {
+                            height: 21px;
+                        }
+                    }
+
                     &:hover {
                         color: $colored-link;
                     }
@@ -46,6 +56,10 @@
                 display: inline;
                 font-size: 14px;
                 @include fontBold;
+
+                @media only screen and (min-width: $ipad) {
+                    font-size: 18px;
+                }
 
                 &:hover {
                     color: $colored-link;
@@ -90,9 +104,7 @@
                         font-size: 13px;
 
                         @media only screen and (min-width: $ipad) {
-                            & {
-                                font-size: 15px;
-                            }
+                            font-size: 15px;
                         }
                     }
                     &:hover {
@@ -145,7 +157,7 @@
                 height: 23vw;
 
                 @media only screen and (min-width: $ipad) {
-                    height: 15vw;
+                    height: 20vw;
                 }
 
                 .crop-img {

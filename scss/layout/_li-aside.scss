@@ -16,6 +16,7 @@
             margin: 1%;
 
             @media only screen and (min-width: $ipad) {
+                margin: 1% 1% 1% 0;
                 height: 26px;
                 width: 26px;
             }
@@ -32,6 +33,7 @@
 
             @media only screen and (min-width: $ipad) {
                 font-size: 22px;
+                margin: 0.6vw 0 0 0;
             }
         }
     }

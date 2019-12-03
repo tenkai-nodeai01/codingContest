@@ -19,7 +19,7 @@
                 color: $colored-link;
                 font-size: 14px;
                 @include fontMedium;
-                @media only screen and (min-width: $pc-small) {
+                @media only screen and (min-width: $ipad) {
                     & {
                         font-size: 16px;
                     }
@@ -67,7 +67,11 @@
             .follow-button__text {
                 color: $link-color;
                 text-decoration: none;
-                @include fontRegular;
+                @include fontMedium;
+                @media only screen and (min-width: $ipad) {
+                    font-size: 16px;
+                }
+
             }
             &:hover {
                 @include hover-brown-white;

@@ -23,9 +23,8 @@
                 background-color: $background-vague-gray;
 
                 @media only screen and (min-width: $ipad) {
-                    & {
-                        font-size: 16px;
-                    }
+                    font-size: 16px;
+                    padding: 2% 3% 2% 4%;
                 }
 
                 // した矢印
@@ -55,11 +54,11 @@
                 color: $link-color;
                 font-size: 14px;
                 background-color: $background-vague-gray;
-                @include fontMedium;
+                @include fontBold;
 
                 @media only screen and (min-width: $ipad) {
                     & {
-                        font-size: 16px;
+                        font-size: 18px;
                     }
                 }
 

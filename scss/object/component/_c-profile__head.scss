@@ -37,7 +37,7 @@
         vertical-align: text-bottom;
         @include fontRegular;
 
-        @media only screen and (min-width: $pc-small) {
+        @media only screen and (min-width: $ipad) {
             & {
                 font-size: 22px;
             }
