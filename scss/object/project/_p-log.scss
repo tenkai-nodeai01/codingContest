@@ -36,6 +36,10 @@
                     padding: 2% 1.5vw 2% 1.5vw;
                 }
 
+                @media only screen and (min-width: $pc-big) {
+                    padding: 2% 1.5vw 2% 2vw;
+                }
+
                 // した矢印
                 &:after {
                     @include arrow-down(10px);
@@ -54,6 +58,15 @@
                 @include display-flex;
                 background-color: $background-vague-gray;
                 padding: 0 4% 2% 4%;
+
+                @media only screen and (min-width: $pc-small) {
+                    padding: 0 1.5vw 2% 1.5vw;
+                }
+
+                @media only screen and (min-width: $pc-big) {
+                    padding: 0 2vw 2% 2vw;
+                }
+
             }
 
             // 開くなくても見えるheaderのtext
@@ -66,9 +79,7 @@
                 @include fontBold;
 
                 @media only screen and (min-width: $ipad) {
-                    & {
-                        font-size: 18px;
-                    }
+                    font-size: 18px;
                 }
 
                 &.beside-img {

@@ -17,6 +17,10 @@
             padding: 2% 1.5vw;
         }
 
+        @media only screen and (min-width: $pc-big) {
+            padding: 2% 2vw;
+        }
+
         &:last-child {
             margin-bottom: unset;
         }

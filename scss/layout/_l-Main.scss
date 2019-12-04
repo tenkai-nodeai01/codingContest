@@ -48,9 +48,8 @@
 
     // gridのサイズ（カラムの場合）
     @media only screen and (min-width: $pc-big) {
-        & {
-            grid-template-columns: 40% 60%;
-        }
+        padding: 107px 32px 0 32px;
+        grid-template-columns: calc(40% - 10px) calc(60% - 5px);
     }
 
 }
