@@ -23,7 +23,7 @@
         .artwork-detail__title {
             margin: 0 0 0 15px;
 
-            @media only screen and (min-width: $pc-small) {
+            @media only screen and (min-width: $ipad) {
                 margin: 0;
             }
         }
