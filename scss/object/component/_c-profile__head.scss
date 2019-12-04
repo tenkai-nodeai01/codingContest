@@ -7,7 +7,11 @@
     height: auto;
     margin: -45px 0 0 0;
     @media only screen and (min-width: $ipad) {
-        & { margin: -55px 0 0 0;}
+        margin: -55px 0 0 0;
+    }
+
+    @media only screen and (min-width: $pc-small) {
+        margin: -35px 0 0 0;
     }
 
     .c-profile__thumbnail {
@@ -38,15 +42,15 @@
         @include fontRegular;
 
         @media only screen and (min-width: $ipad) {
-            & {
-                font-size: 22px;
-            }
+            font-size: 22px;
+        }
+
+        @media only screen and (min-width: $pc-small) {
+            margin-bottom: 10px;
         }
 
         @media only screen and (min-width: $pc-big) {
-            & {
-                font-size: 24px;
-            }
+            font-size: 24px;
         }
     }
 }

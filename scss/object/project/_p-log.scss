@@ -6,6 +6,10 @@
         margin-top: unset;
     }
 
+    @media only screen and (min-width: $pc-small) {
+        margin-top: -1vw;
+    }
+
     .log-list-ol {
         list-style: none;
         padding: unset;
@@ -24,7 +28,12 @@
 
                 @media only screen and (min-width: $ipad) {
                     font-size: 16px;
-                    padding: 2% 3% 2% 4%;
+                    padding: 2% 4% 2% 4%;
+                }
+
+                @media only screen and (min-width: $pc-small) {
+                    font-size: 16px;
+                    padding: 2% 1.5vw 2% 1.5vw;
                 }
 
                 // した矢印

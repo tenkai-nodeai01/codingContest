@@ -4,6 +4,10 @@
     padding: 10px 2% 10px 2%;
     width: auto;
 
+    @media only screen and (min-width: $pc-small) {
+        padding: unset;
+    }
+
     // インスピレーションログ
     .l-aside__header {
         display: inline-block;
@@ -34,6 +38,10 @@
             @media only screen and (min-width: $ipad) {
                 font-size: 22px;
                 margin: 0.6vw 0 0 0;
+            }
+
+            @media only screen and (min-width: $pc-small) {
+                margin: 0;
             }
         }
     }

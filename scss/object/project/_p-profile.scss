@@ -40,10 +40,9 @@
                 margin: 0 0 0 5%;
                 padding-top: 2vw;
                 @media only screen and (min-width: $pc-small) {
-                    & {
-                        width: 92%;
-                        margin: 2% auto;
-                    }
+                    width: 90%;
+                    margin: auto;
+                    padding: 3% 0 1% 0;
                 }
 
 
@@ -55,9 +54,7 @@
                     font-size: 14px;
 
                     @media only screen and (min-width: $ipad) {
-                        & {
-                            font-size: 16px;
-                        }
+                        font-size: 16px;
                     }
 
                     &:after {
@@ -79,9 +76,7 @@
                     @include fontMedium;
 
                     @media only screen and (min-width: $ipad) {
-                        & {
-                            font-size: 16px;
-                        }
+                        font-size: 16px;
                     }
 
                     &:hover {
@@ -134,7 +129,7 @@
                     margin-right: 5px;
                     -o-object-fit: cover;
                     object-fit: cover;
-                    height: 12vw;
+                    height: 13vw;
                     margin-bottom: 5px;
                     overflow: hidden;
                     max-height: 140px;
