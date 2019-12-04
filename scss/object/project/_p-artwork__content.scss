@@ -15,6 +15,9 @@
         // imgの要素
         .image-element {
             width: 100%;
+            @media only screen and (min-width: $pc-big) {
+                height: 84%;
+            }
         }
     }
 

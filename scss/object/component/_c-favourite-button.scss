@@ -15,6 +15,11 @@
         &.is-liked {
             background: url(../assets/minify-img/fav_btn_on.svg) 50% 50% no-repeat;
         }
+
+        @media only screen and (min-width: $pc-small) {
+            width: 27px;
+            height: 23px;
+        }
     }
 
     .favourite-count {
@@ -31,10 +36,18 @@
 
         .favourite-count__number {
             font-size: 14px;
+
+            @media only screen and (min-width: $pc-small) {
+                font-size: 16px;
+            }
         }
 
         .favourite-count__label {
             font-size: 12px;
+
+            @media only screen and (min-width: $pc-small) {
+                font-size: 14px;
+            }
         }
     }
 }
