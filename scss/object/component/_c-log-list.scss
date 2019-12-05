@@ -41,7 +41,9 @@
             background-color: $link-yellow;
             text-decoration: none;
             color: $text-color;
-            &:hover {
+
+            &:hover,
+            &:active {
                 @include hover-black-white;
             }
         }

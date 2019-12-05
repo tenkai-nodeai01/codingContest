@@ -52,7 +52,8 @@
                         }
                     }
 
-                    &:hover {
+                    &:hover,
+                    &:active {
                         color: $colored-link;
                     }
                 }
@@ -69,7 +70,8 @@
                     font-size: 18px;
                 }
 
-                &:hover {
+                &:hover,
+                &:active {
                     color: $colored-link;
                 }
             }
@@ -83,9 +85,11 @@
                 font-size: 14px;
                 @include fontMedium;
 
-                &:hover {
+                &:hover,
+                &:active {
                     text-decoration: none;
                 }
+
                 &:before {
                     content: url(../assets/minify-img/map_icon.svg);
                     width: 14px;
@@ -115,7 +119,9 @@
                             font-size: 15px;
                         }
                     }
-                    &:hover {
+
+                    &:hover,
+                    &:active {
                         background-color: $colored-link;
                     }
                 }
@@ -130,9 +136,7 @@
             @include fontRegular;
 
             @media only screen and (min-width: $ipad) {
-                & {
-                    font-size: 16px;
-                }
+                font-size: 16px;
             }
         }
 
@@ -154,10 +158,12 @@
             margin: 2% 0 0 0;
             .img-wrapper__el {
                 width: 100%;
+
                 &.el-left {
                     width: 49%;
                     margin-right: 2%;
                 }
+
                 &.el-right {
                     width: 49%;
                     float: right;

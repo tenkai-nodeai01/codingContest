@@ -20,13 +20,12 @@
                 font-size: 14px;
                 @include fontMedium;
                 @media only screen and (min-width: $ipad) {
-                    & {
-                        font-size: 16px;
-                    }
+                    font-size: 16px;
                 }
             }
 
-            &:hover {
+            &:hover,
+            &:active {
                 background-color: $colored-link;
                 .list-word {
                     color: $highlight;
@@ -73,7 +72,9 @@
                 }
 
             }
-            &:hover {
+
+            &:hover,
+            &:active {
                 @include hover-brown-white;
                 cursor: pointer;
                 .follow-button__text {
@@ -84,11 +85,15 @@
             // 押された場合
             &.is-active {
                 background-color: $link-color;
+
                 .follow-button__text {
                     color: $highlight;
                 }
-                &:hover {
+
+                &:hover,
+                &:active {
                     @include hover-white-brown;
+
                     .follow-button__text {
                         color: $link-color;
                     }
@@ -110,7 +115,8 @@
             text-decoration: none;
             @include fontRegular;
 
-            &:hover {
+            &:hover,
+            &:active {
                 color: $colored-link;
             }
         }
@@ -128,7 +134,9 @@
                 .sns-icon-el {
                     width: 35px;
                     position: absolute;
-                    &:hover {
+
+                    &:hover,
+                    &:active {
                         opacity: 0;
                     }
                 }
@@ -161,9 +169,7 @@
         padding: 0;
 
         @media only screen and (min-width: $pc-small) {
-            & {
-                margin: 0 0 2% 0;
-            }
+            margin: 0 0 2% 0;
         }
 
         .user-description__icon {
@@ -194,7 +200,9 @@
                 font-size: 14px;
                 color: $link-color;
                 @include fontMedium;
-                &:hover {
+
+                &:hover,
+                &:active {
                     color: $colored-link;
                 }
             }

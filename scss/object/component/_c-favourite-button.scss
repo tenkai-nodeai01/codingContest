@@ -23,7 +23,8 @@
     }
 
     .favourite-count {
-        &:hover {
+        &:hover,
+        &:active {
             .link-text {
                 color: $colored-link;
             }

@@ -24,7 +24,8 @@
             @include fontMedium;
         }
 
-        &:hover {
+        &:hover,
+        &:active {
             background-color: $colored-link;
         }
     }

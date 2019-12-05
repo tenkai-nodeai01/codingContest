@@ -84,7 +84,8 @@
                         font-size: 16px;
                     }
 
-                    &:hover {
+                    &:hover,
+                    &:active {
                         color: $colored-link;
                         cursor: pointer;
                     }

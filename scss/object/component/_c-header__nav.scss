@@ -35,7 +35,9 @@
             // Map
             &.c-nav__map {
                 background: url(../assets/minify-img/map_icon.svg) no-repeat;
-                &:hover {
+
+                &:hover,
+                &:active {
                     background: url(../assets/minify-img/map_icon_white.svg) no-repeat;
                     a {
                         color: $highlight;
@@ -46,7 +48,9 @@
             // Search
             &.c-nav__search {
                 background: url(../assets/minify-img/search_icon.svg) no-repeat;
-                &:hover {
+
+                &:hover,
+                &:active {
                     background: url(../assets/minify-img/search_icon_white.svg) no-repeat;
                     a {
                         color: $highlight;
@@ -57,7 +61,9 @@
             // FAQ
             &.c-nav__faq {
                 background: url(../assets/minify-img/q_icon.svg) no-repeat;
-                &:hover {
+
+                &:hover,
+                &:active {
                     background: url(../assets/minify-img/q_icon_white.svg) no-repeat;
                     a {
                         color: $highlight;
@@ -66,10 +72,8 @@
             }
 
             @media only screen and (max-width: 400px) {
-                & {
-                    margin-right: 20px;
-                    font-size: 12px;
-                }
+                margin-right: 20px;
+                font-size: 12px;
             }
 
         }

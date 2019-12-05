@@ -19,8 +19,10 @@
         width: 78px;
         display: inline-block;
         @media only screen and (min-width: $ipad) {
-            & {height: 88px;
-            width: 88px;}
+            & {
+                height: 88px;
+                width: 88px;
+            }
         }
 
         .thumbnail-icon {

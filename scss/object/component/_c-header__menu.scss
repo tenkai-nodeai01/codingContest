@@ -11,10 +11,13 @@
         color: $colored-link;
         font-size: 14px;
         @include fontMedium;
-        &:hover {
+
+        &:hover,
+        &:active {
             background-color: $link-yellow;
             cursor: pointer;
         }
+
         @media only screen and (min-width: $pc-small) {
             padding: 5px;
             width: 150px;

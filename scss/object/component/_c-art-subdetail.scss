@@ -23,7 +23,8 @@
             .list-text {
                 color: $link-color;
                 text-decoration: none;
-                &:hover {
+                &:hover,
+                &:active {
                     color: $colored-link;
                 }
             }

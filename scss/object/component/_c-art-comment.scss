@@ -23,7 +23,8 @@
             display: none;
         }
 
-        &:hover {
+        &:hover,
+        &:active {
             background-color: $highlight;
             cursor: pointer;
         }
