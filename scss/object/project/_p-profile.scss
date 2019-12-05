@@ -6,6 +6,11 @@
         background: $background-white;
         display: inline-block;
         width: 100%;
+
+        @media only screen and (min-width: $pc-small) {
+            margin: 0 0 15px 0;
+        }
+
         .c-profile__background {
             display: inline-block;
             width: 100%;
@@ -95,30 +100,7 @@
             padding: 0;
             margin: 1% 0 3% 5%;
 
-            // scrollbar hide
-            &::-webkit-scrollbar {
-                display: none;
-            }
-
-            .own-img__list {
-                list-style: none;
-                margin-right: 2px;
-                .own-img-el {
-                    height: 20vw;
-                    max-height: 140px;
-                }
-            }
-        }
-    }
-
-    // サイズによって、必要な調整はここに書きます
-    @media only screen and (min-width: $pc-small) {
-        .c-profile {
-            margin: 0 0 15px 0;
-        }
-
-        .c-work__wrapper {
-            .own-img__ul {
+            @media only screen and (min-width: $pc-small) {
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
                 width: 92%;
@@ -137,6 +119,27 @@
                     .own-img-el {
                         width: 100%;
                     }
+                }
+            }
+
+
+            // scrollbar hide
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .own-img__list {
+                list-style: none;
+                margin-right: 2px;
+
+                @media only screen and (min-width: $pc-big) {
+                    margin-right: 2px;
+                    margin-bottom: 2px;
+                }
+
+                .own-img-el {
+                    height: 20vw;
+                    max-height: 140px;
                 }
             }
         }
