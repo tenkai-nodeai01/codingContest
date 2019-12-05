@@ -9,7 +9,7 @@
     // li
     .c-log-content__list {
         padding: 2% 4%;
-        margin-bottom: 2px;
+        margin-bottom: 1px;
         background-color: $background-white;
         min-height: 10vw;
 
@@ -175,7 +175,7 @@
                 height: 23vw;
 
                 @media only screen and (min-width: $ipad) {
-                    height: 20vw;
+                    height: 28vw;
                 }
 
                 @media only screen and (min-width: $pc-small) {

@@ -99,7 +99,11 @@
             display: flex;
             overflow-x: scroll;
             padding: 0;
-            margin: 1% 0 3% 5%;
+            margin: 1% 0 6% 5%;
+
+            @media only screen and (min-width: $ipad) {
+                margin: 1% 0 4% 5%;
+            }
 
             @media only screen and (min-width: $pc-small) {
                 -ms-flex-wrap: wrap;
