@@ -2,9 +2,13 @@
 
 .p-artwork__log {
     .p-header-wrapper {
-        padding: 1.6vw 35px 1.6vw 35px;
+        padding: 1.8vw 35px 1.8vw 35px;
         @media only screen and (min-width: $ipad) {
             padding: 1.6vw 5vw 1.6vw 5vw;
+        }
+
+        @media only screen and (min-width: $pc-small) {
+            padding: 1.5vw 5vw 1.6vw 5vw;
         }
 
         .p-log-header {
